@@ -1,0 +1,171 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>FileInputDlg</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>FileInputDlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>511</width>
+            <height>284</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Change file information</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <property name="sizeGripEnabled">
+        <bool>true</bool>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="text">
+                <string>File name:</string>
+            </property>
+        </widget>
+        <widget class="QToolButton" row="1" column="1">
+            <property name="name">
+                <cstring>toolButton1</cstring>
+            </property>
+            <property name="text">
+                <string></string>
+            </property>
+            <property name="iconSet">
+                <iconset>image1</iconset>
+            </property>
+        </widget>
+        <widget class="QLineEdit" row="1" column="0">
+            <property name="name">
+                <cstring>lineEdit1</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="0">
+            <property name="name">
+                <cstring>textLabel2</cstring>
+            </property>
+            <property name="text">
+                <string>File description:</string>
+            </property>
+        </widget>
+        <widget class="QTextEdit" row="3" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textEdit1</cstring>
+            </property>
+            <property name="textFormat">
+                <enum>PlainText</enum>
+            </property>
+        </widget>
+        <widget class="QLayoutWidget" row="4" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>Layout1</cstring>
+            </property>
+            <hbox>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <property name="margin">
+                    <number>0</number>
+                </property>
+                <property name="spacing">
+                    <number>6</number>
+                </property>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonHelp</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Help</string>
+                    </property>
+                    <property name="accel">
+                        <string>F1</string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <spacer>
+                    <property name="name">
+                        <cstring>Horizontal Spacing2</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Horizontal</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Expanding</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>20</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonOk</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;OK</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                    <property name="default">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+                <widget class="QPushButton">
+                    <property name="name">
+                        <cstring>buttonCancel</cstring>
+                    </property>
+                    <property name="text">
+                        <string>&amp;Cancel</string>
+                    </property>
+                    <property name="accel">
+                        <string></string>
+                    </property>
+                    <property name="autoDefault">
+                        <bool>true</bool>
+                    </property>
+                </widget>
+            </hbox>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="1709">789c9dd1596fda401007f0773e8515bf45d5c436b6f1aaea43ee9b2b0939aa3e98350e390809908344fdee1deffc77456855a99579e0a7f97b7666bdb6ea5db48fbdd5b5da7496cf6eb4a787f9c45b2d9e47a3f9f71fdf3e6a2b61eaf12fcdbc68e54b6da533f3b4d71c3f0c2af839c30f82288ec3ca9439e7c613388343ebc434a37358c3b1b81ec01d6779bf07c7f0dc3a3579df8733b8ef2c795bd7f0be75a36e8c7c1ca08efde2189e5a23df8633f8dd388b34f6ed5a639f5bb1dbef4eecce2bacd14fc3f6bc33386bf48ddf600d2beb4cf20795c3c0cdd310f3fe72fe8dd8edb707a39f4fe22440ff273841ff47639e07fd8662576fc10a0ee022937e27d62a367e15a721ea877082fa65e588e7c3792fe2c4dedf002e30efbad8f5bb821338b146ff6b58a11e592b6d7c6cac9204dfe35eccfdc54dd8eeb3eb2cef97e24688fa4ee57ae87c01ab5cbc6dac1af6fc115ca05e176721fce02cf9d3ca315f30bc01abbee46770013f1be72a84372b279152fdc278cb5a27c6477001a795cbb2cccbd2780c97e2ceecefcfff64c8374f4efd3f67485341032ae99a867443b7a497337447f734a2071af3f3484f9c9f486a2133e5c48c9e4de6855ee98de6f4be98e119d6698336698b53dbb443bbb447fb9c3af89439e42e47a6cb988ea9492d6a5387ba9f3227746afac85955e68c7a74be90e9f194176e9e4bbaa2c0f409173273de2be2a9ebd8abc5eff814d3e4d35e21f74e28c5440d4e9c53b6b4bbe6fbf0796365ae9a7bf8f9f2fd48caf7fd7e3529ffcb7fbf67e4bafcf019d51cfff4dd7f7eadfd02ed718fc8</data>
+    </image>
+    <image name="image1">
+        <data format="XPM.GZ" length="2328">789c75d55d53e2481406e07b7f05e5b9b3b6ce909034494dcd05a2e2b7329fce6ced4527e908228a082a4eed7fdfce396f67dda91d5b8c0ffd72fa2bc6773b9dabcbb3cecebbadc7955d4dcb4e39b1cbce4eb59ecf377ffef5e1e7d676643acd77b7df89b7ffd8da1eaf3a65e7fcfece35e0ebb7a0b7b8f3a0388fb338174f1a77e54b6cd4bdd24859b6e2ac9b743371d938caa22412d3f92ff5eac6bd282e7b91f49fa87b5d780927f08538f796cfd32b9ca9f9b2711225dd44f23c14db2449ace4177086f917c1e83f6e9cc629d6472fad753db7c1a9ae770f4e516fdd5af34762dbfa11ced5741a9ceaf8b3c6264e2bad4f076a13e9fed2406c4d6e34ef1af77b26c57ce6e2a29ff60b71d638ebf523adcff7ea2cd27eba83d358d74b70aee61fe2a28ff9f17930cefb42edebf5c44f709a89e91ece713e877015e978d3609c67a1ce238cbf699c27fd0ae3bda8b31ceb5bc1a8c7afc1e83f0bc67c6ed4a13ed9d63abf5e639be4b9deaf1c07235fc215fcdc5ae7bf1f6c13f1466d2358e6634b6b6d293e821dfcd0b8488ab8d0fc0436b95af6afa80a5354e2116c61861df677188cfedbe03295f5258dcbb4b0b89f2ad8c17bc19aa75d7519c3756ba9cf7d7155c499eeff277519e33c96b0417e17b695ce27871dfaa3c6555a1aace709769aa7b5ba8af1f9ef62571add6f1ec30ecf83aeba32953edf46b0c5f9ac82b59f1e6187fc556367aa58f7933fc206f7e76718f5f86b6b3ddfb9dac5ce487f051b589e7fceb9b09e196c9c8e9fc216fbf3251879178cfc03ec6079ded4a6adffadb5f6efc30ef33f08c67883e05ae77ba3ae63355dc306fdf2f751d7a19f8fe1d0bf806d5d8ba770ad1eafc62b26df2c1772fda5bdc9945cb1f3a982ebdf64ae79c253bef1ade219df4acdb97fef6de64e32f7becd78e1db83bf56bc6c52fafce6957fad7de6899ff98537fc8ae4807779a8ff13789f0f78c4877ce47f3fe6133ee5333ee70ba975893a63fec89ff8337fe1afa8f98daff83bffe0ae66fc6c8e38e2987b9cf8e48853a969b8cf19e76d66eda74f64a9a09263aa50f3911cd56d6642d7bca0094d7df2860ad4dca319dd868c4f0dfd1a0634e79924efa4e63d2de8e1df0c2d694e8ffeb5f26d4d4f3ef9ec932fb4795387fc78af34a05ddfffc44b7f1dd29e9fe7fe7f32da26bee2013dd0880efdcf233afe9f4c489ed0296de8ccafedf53799903ca70b7f5e7fbfdffa07591c0a27</data>
+    </image>
+</images>
+<connections>
+    <connection>
+        <sender>buttonOk</sender>
+        <signal>clicked()</signal>
+        <receiver>FileInputDlg</receiver>
+        <slot>accept()</slot>
+    </connection>
+    <connection>
+        <sender>buttonCancel</sender>
+        <signal>clicked()</signal>
+        <receiver>FileInputDlg</receiver>
+        <slot>reject()</slot>
+    </connection>
+</connections>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

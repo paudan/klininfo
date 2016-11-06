@@ -1,0 +1,163 @@
+#!/bin/bash
+
+   echo Date:  $(date)
+   echo Day of week: $(date +%A)
+   echo Week number of year: $(date +%W)
+   echo Timezone:  $(date +%z:%Z)
+   echo Time:  $(date +%T)
+   echo
+   echo ====================================================
+   echo
+   echo System info
+   echo
+   echo Current user: $USER
+   echo Logon name: $LOGNAME
+   echo Hostname: $HOSTNAME
+   echo Home directory: $HOME
+   echo Language: $LANG
+   echo User shell: $SHELL
+   echo OS: $MACHTYPE
+   echo Default terminal: $TERM
+   echo Bash version: $BASH_VERSION
+   echo User  ID: `id | awk 'BEGIN {FS=" "} {print $1}' | awk 'BEGIN {FS="="} {print $2}'`
+   echo Group ID: `id | awk 'BEGIN {FS=" "} {print $2}' | awk 'BEGIN {FS="="} {print $2}'`
+   echo Groups, that the user belongs to: `id | awk 'BEGIN {FS=" "} {print $3}'` 
+   echo Effective user ID: $EUID
+   echo Kernel information: `dmesg | grep "Kernel command line:"| sed s/"Kernel command line: "//`
+   echo
+   echo ====================================================
+   echo
+   echo Users, curently logged in:; finger 
+   echo
+   echo ====================================================
+   echo
+   echo Processor information:; 
+   echo
+   dmesg | grep CPU; dmesg | grep processor; dmesg | grep MIPS
+   echo
+   cat /proc/cpuinfo
+   echo
+   echo System running: `uptime | awk 'BEGIN {FS=" "} {print $3" "$4}' | sed s/,//`
+   echo "CPU utilization in the last period of:"
+   echo "   "1  minute:  `uptime | awk 'BEGIN {FS=" "} {print $8}' | sed s/,//`
+   echo "   "5  minute:  `uptime | awk 'BEGIN {FS=" "} {print $9}' | sed s/,//`
+   echo "   "10 minute:  `uptime | awk 'BEGIN {FS=" "} {print $10}' | sed s/,//`
+   cat /proc/loadavg | awk 'BEGIN {FS=" "}{print $4}' | awk 'BEGIN {FS="/"}{print "The number of currently running processes: "$1}'
+   cat /proc/loadavg | awk 'BEGIN {FS=" "}{print $4}' | awk 'BEGIN {FS="/"}{print "The total number of processes: "$2}'
+   echo Last process ID used: `cat /proc/loadavg | awk 'BEGIN {FS=" "}{print $5}'`
+   echo
+   echo ====================================================
+   echo
+   echo DMA information:; cat /proc/dma
+   echo
+   echo ====================================================
+   echo
+   echo I/O ports:; cat /proc/ioports
+   echo
+   echo ====================================================
+   echo
+   echo Soundcard info:;
+   echo
+   echo Card info:; cat /proc/asound/oss/sndstat
+   echo
+   echo Modules:; cat /proc/asound/modules
+   echo
+   echo Devices:; cat /proc/asound/devices
+   echo
+   echo OSS devices:; cat /proc/asound/oss/devices
+   echo
+   echo ====================================================
+   echo
+   echo Devices:; cat /proc/devices
+   echo
+   echo ====================================================
+   echo
+   echo ISA Plug\'n\'Play devices:; cat /proc/isapnp
+   echo
+   echo ====================================================
+   echo
+   echo PCI devices; 
+   echo
+   cat /proc/pci
+   echo
+   echo ====================================================
+   echo
+   echo SCSI devices:; cat /proc/scsi/scsi
+   echo
+   echo IDE-SCSI devices:; 
+        for i in `ls /proc/scsi/ide-scsi`; 
+	do
+           cat /proc/scsi/ide-scsi/$i;
+	done   
+   echo
+   echo ====================================================
+   echo
+   echo RAID information; 
+   echo
+   if [ -e /proc/mdstat ]; then
+      cat /proc/mdstat;
+   else 
+   echo No RAID information available
+   fi    
+   echo
+   echo ====================================================
+   echo
+   echo Filesystems, currently supported by kernel:; 
+   echo
+   cat /proc/filesystems
+   echo
+   echo ====================================================
+   echo
+   echo BIOS information: 
+   echo
+   dmesg | grep BIOS-
+   echo
+   echo ====================================================
+   echo
+   echo APM information: 
+   echo; apm -v
+   echo
+   echo ====================================================
+   echo
+   echo Memory information: 
+   echo
+   dmesg | grep Memory; dmesg | grep cache | grep entries
+   echo
+   echo "Current map of the system's memory for each physical device (memory registers):"
+   echo
+   cat /proc/iomem
+   echo
+   echo "Memory usage on the slab level (slabinfo) (the values in  the following order: cache name, number of active objects, number of total objects, size of the object, number of active  slabs (blocks) of the objects, total number of slabs of the objects, and the number of pages per slab):" 
+   echo
+   cat /proc/slabinfo | sed 1d
+   echo
+   echo ====================================================
+   echo 
+   echo Video and console information: 
+   echo
+   dmesg | grep -i vesa; dmesg | grep Console
+   echo
+   echo ====================================================
+   echo
+   echo TCP/IP information: 
+   echo
+   dmesg | grep [TCI]P[X[:punct:][:space:]]
+   echo
+   echo  ifconfig information:;
+   echo; ifconfig
+   echo
+   echo ====================================================
+   echo 
+   echo Various settings that can be changed:;  
+   echo; sysctl -a
+   echo
+   echo ====================================================
+   exit 0
+
+
+
+
+
+
+
+

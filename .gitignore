@@ -1,0 +1,10 @@
+*.log
+autom4te.cache
+templates
+src/.deps
+*/*.o
+*/*.moc
+*.log
+*.status
+libtool
+

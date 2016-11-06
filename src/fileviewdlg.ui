@@ -1,0 +1,207 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>FilePreviewDlg</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>FilePreviewDlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>609</width>
+            <height>543</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>File Preview Dialog</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="0" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>dlg_title</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;Important system files&lt;/b&gt;</string>
+            </property>
+            <property name="alignment">
+                <set>WordBreak|AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="KTextBrowser" row="4" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>kTextBrowser2</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="3" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel3</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>NoFrame</enum>
+            </property>
+            <property name="text">
+                <string>File contents:</string>
+            </property>
+        </widget>
+        <widget class="KTextEdit" row="2" column="1">
+            <property name="name">
+                <cstring>kTextEdit1</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>7</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+        </widget>
+        <widget class="QLabel" row="1" column="1">
+            <property name="name">
+                <cstring>textLabel2</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>File description:</string>
+            </property>
+        </widget>
+        <widget class="QFrame" row="1" column="0" rowspan="2" colspan="1">
+            <property name="name">
+                <cstring>frame</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>GroupBoxPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Raised</enum>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QLabel" row="0" column="0">
+                    <property name="name">
+                        <cstring>textLabel1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Select file for viewing:</string>
+                    </property>
+                </widget>
+                <spacer row="4" column="1">
+                    <property name="name">
+                        <cstring>spacer1</cstring>
+                    </property>
+                    <property name="orientation">
+                        <enum>Vertical</enum>
+                    </property>
+                    <property name="sizeType">
+                        <enum>Fixed</enum>
+                    </property>
+                    <property name="sizeHint">
+                        <size>
+                            <width>20</width>
+                            <height>30</height>
+                        </size>
+                    </property>
+                </spacer>
+                <widget class="QPushButton" row="1" column="1">
+                    <property name="name">
+                        <cstring>addButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Add</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="2" column="1">
+                    <property name="name">
+                        <cstring>modifyButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Modify</string>
+                    </property>
+                </widget>
+                <widget class="QPushButton" row="3" column="1">
+                    <property name="name">
+                        <cstring>removeButton</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Remove</string>
+                    </property>
+                </widget>
+                <widget class="KListBox" row="1" column="0" rowspan="4" colspan="1">
+                    <property name="name">
+                        <cstring>kListBox1</cstring>
+                    </property>
+                    <property name="sizePolicy">
+                        <sizepolicy>
+                            <hsizetype>0</hsizetype>
+                            <vsizetype>7</vsizetype>
+                            <horstretch>0</horstretch>
+                            <verstretch>0</verstretch>
+                        </sizepolicy>
+                    </property>
+                    <property name="resizePolicy">
+                        <enum>AutoOne</enum>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>kListBox1</sender>
+        <signal>executed(QListBoxItem*)</signal>
+        <receiver>FilePreviewDlg</receiver>
+        <slot>kListBox1_executed(QListBoxItem*)</slot>
+    </connection>
+    <connection>
+        <sender>addButton</sender>
+        <signal>clicked()</signal>
+        <receiver>FilePreviewDlg</receiver>
+        <slot>addButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>modifyButton</sender>
+        <signal>clicked()</signal>
+        <receiver>FilePreviewDlg</receiver>
+        <slot>modifyButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>removeButton</sender>
+        <signal>clicked()</signal>
+        <receiver>FilePreviewDlg</receiver>
+        <slot>removeButton_clicked()</slot>
+    </connection>
+</connections>
+<variables>
+    <variable access="public">QString errorMsg;</variable>
+    <variable access="private">QStringList fileList;</variable>
+</variables>
+<slots>
+    <slot>kListBox1_executed(QListBoxItem*)</slot>
+    <slot>addButton_clicked()</slot>
+    <slot>modifyButton_clicked()</slot>
+    <slot>removeButton_clicked()</slot>
+</slots>
+<functions>
+    <function>loadFileList()</function>
+    <function access="private">editFileDesc()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>ktextbrowser.h</includehint>
+    <includehint>ktextedit.h</includehint>
+    <includehint>klistbox.h</includehint>
+</includehints>
+</UI>

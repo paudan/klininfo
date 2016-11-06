@@ -1,0 +1,27 @@
+<html><head><title>Source files</title><link rel="stylesheet" href="help:/common/kde-default.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.48"><meta name="keywords" content="KLinInfo, printenv, RPM, Package"><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><meta name="GENERATOR" content="KDE XSL Stylesheet V1.13 using libxslt"><link rel="home" href="index.html" title="The KLinInfo Handbook"><link rel="up" href="settings.html" title="Chapter 3. KLinInfo settings"><link rel="previous" href="settings.html" title="Chapter 3. KLinInfo settings"><link rel="next" href="misc_options.html" title="Miscellaneous options"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr class="header"><td colspan="2"> </td></tr><tr id="logo"><td valign="top"><img src="help:/common/kde_logo.png" alt="KDE -         The K Desktop Environment" width="296" height="79" border="0"></td><td valign="middle" align="center" id="location"><h1>Source files</h1></td></tr></table><table width="100%" class="header"><tbody><tr><td align="left" class="navLeft" width="33%"><a accesskey="p" href="settings.html">Prev</a></td><td align="center" class="navCenter" width="34%">KLinInfo settings</td><td align="right" class="navRight" width="33%"> 
+		      <a accesskey="n" href="misc_options.html">Next</a></td></tr></tbody></table><div class="sect1"><div class="titlepage"><div><h2 class="title" style="clear: both"><a name="File_options"></a>Source files</h2></div></div><p>
+<div class="screenshot"><div xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" class="mediaobject"><hr><img src="options_files.png"><hr></div></div>
+</p><p>
+This is where you can select files to be used as databases for file viewing (file lists with their descriptions), command descriptions and version file. 
+</p><p>
+The default files usually reside in directory <tt>~/.klininfo</tt>.</p><p>
+<div class="table"><p><b>Table 3.1. Default KLinInfo files</b></p><table summary="Default KLinInfo files" border="1"><colgroup><col><col></colgroup><tbody><tr><td>Command Descriptions</td><td><tt>~/.klininfo/commandrc.kl</tt></td></tr><tr><td>System Files</td><td><tt>~/.klininfo/systemrc.kl</tt></td></tr><tr><td>Log Files</td><td><tt>~/.klininfo/logrc.kl</tt></td></tr><tr><td>Program version file</td><td><tt>~/.klininfo/filever</tt></td></tr></tbody></table></div>
+</p><p>
+KLinInfo uses special type of files with extension <tt>.kl</tt>. This is a kind of structured text files with entries, that consist of file name and description. The description is written in the next line of the word <tt>DESCRIPTION</tt> and may contain various HTML tags, which affect it's displaying.</p><p>This is an example of <tt>.kl</tt> file:</p><p>
+<pre class="programlisting">
+NAME: grep
+DESCRIPTION: 
+&lt;p&gt;   Searches for strings which have particular pattern, in files or in stdout.&lt;/p&gt;&lt;p&gt;   &lt;i&gt;Grep -e&lt;/i&gt; is the same as 
+&lt;i&gt;egrep&lt;/i&gt;&lt;/p&gt;&lt;p&gt;   &lt;i&gt;Grep -f&lt;/i&gt; is the same as &lt;i&gt;fgrep&lt;/i&gt;&lt;/p&gt;
+&lt;p&gt;-c or --count options gives a possibility to print only a preferrable number of lines&lt;/p&gt;
+******************************************************************
+NAME: vmstat
+DESCRIPTION:
+  Prints out the information and statistics of memory usage.
+******************************************************************
+NAME: amp
+DESCRIPTION: 
+&lt;p&gt;A console &lt;b&gt;mp3&lt;/b&gt; player&lt;/p&gt;&lt;p&gt;It's usage is similar to &lt;i&gt;mpg123&lt;/i&gt;&lt;/p&gt;
+******************************************************************
+</pre>
+</p><p>The buttons in the right allow to edit those files directly with the editor that is set in <span xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" style="background-color: rgb(240,240,240);   color: rgb(0,0,0);">Miscellaneous options</span> in this dialog..</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>Although it's possible to edit all these files, it's not recommended to edit description files (with extension <tt>.kl</tt>) directly. It's easier to use <span xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" style="background-color: rgb(240,240,240);   color: rgb(0,0,0);">Add</span>/<span xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" style="background-color: rgb(240,240,240);   color: rgb(0,0,0);">Edit</span>/<span xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" style="background-color: rgb(240,240,240);   color: rgb(0,0,0);">Remove</span> buttons in Command description window and file viewing windows.</p></div></div><table width="100%" class="bottom-nav"><tr><td width="33%" align="left" valign="top" class="navLeft"><a href="settings.html">Prev</a></td><td width="34%" align="center" valign="top" class="navCenter"><a href="index.html">Home</a></td><td width="33%" align="right" valign="top" class="navRight"><a href="misc_options.html">Next</a></td></tr><tr><td width="33%" align="left" class="navLeft">KLinInfo settings </td><td width="34%" align="center" class="navCenter"><a href="settings.html">Up</a></td><td width="33%" align="right" class="navRight"> Miscellaneous options</td></tr></table></body></html>

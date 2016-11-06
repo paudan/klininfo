@@ -1,0 +1,319 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>FilesConfig</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>FilesConfig</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>418</width>
+            <height>288</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Form1</string>
+    </property>
+    <property name="toolTip" stdset="0">
+        <string>You can select to use your own KLinInfo description files here</string>
+    </property>
+    <property name="whatsThis" stdset="0">
+        <string>This dialog gives ability to select files with descriptions, used by System files, Log files and Custom commands dialogs. You can also edit them here </string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="0" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>textLabel2</cstring>
+            </property>
+            <property name="font">
+                <font>
+                    <pointsize>13</pointsize>
+                    <bold>1</bold>
+                </font>
+            </property>
+            <property name="text">
+                <string>Source files </string>
+            </property>
+            <property name="alignment">
+                <set>AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QLabel" row="1" column="0">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="text">
+                <string>Command description file:</string>
+            </property>
+        </widget>
+        <widget class="KLineEdit" row="2" column="0">
+            <property name="name">
+                <cstring>kLineEdit1</cstring>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>The name and full path of command description file</string>
+            </property>
+        </widget>
+        <widget class="QToolButton" row="2" column="1">
+            <property name="name">
+                <cstring>toolButton1</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>1</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>20</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>...</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Select command description file here</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>Select command description file here</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="2" column="2">
+            <property name="name">
+                <cstring>pushButton1</cstring>
+            </property>
+            <property name="text">
+                <string>Edit file..</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Edit your selected file here (although it's not recommended to edit it by hand)</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>Allows you to edit command description file</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="3" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>textLabel3</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;i&gt;System files&lt;/i&gt; description file:</string>
+            </property>
+            <property name="alignment">
+                <set>AlignVCenter</set>
+            </property>
+        </widget>
+        <widget class="KLineEdit" row="4" column="0">
+            <property name="name">
+                <cstring>kLineEdit2</cstring>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>The name and full path  of &lt;i&gt;System files&lt;/i&gt; description file</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="5" column="0">
+            <property name="name">
+                <cstring>textLabel4</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;i&gt;Log files&lt;/i&gt; description file:</string>
+            </property>
+            <property name="alignment">
+                <set>AlignVCenter</set>
+            </property>
+        </widget>
+        <widget class="KLineEdit" row="6" column="0">
+            <property name="name">
+                <cstring>kLineEdit3</cstring>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>The name and full path of &lt;i&gt;Log files&lt;/i&gt; description file</string>
+            </property>
+        </widget>
+        <widget class="QToolButton" row="6" column="1">
+            <property name="name">
+                <cstring>toolButton3</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>1</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>20</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>...</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="6" column="2">
+            <property name="name">
+                <cstring>pushButton3</cstring>
+            </property>
+            <property name="text">
+                <string>Edit file...</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="7" column="0">
+            <property name="name">
+                <cstring>textLabel1_2</cstring>
+            </property>
+            <property name="text">
+                <string>Program version file:</string>
+            </property>
+        </widget>
+        <widget class="KLineEdit" row="8" column="0">
+            <property name="name">
+                <cstring>kLineEdit4</cstring>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>The name and full path of program version fil</string>
+            </property>
+        </widget>
+        <widget class="QToolButton" row="8" column="1">
+            <property name="name">
+                <cstring>toolButton4</cstring>
+            </property>
+            <property name="text">
+                <string>...</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>Select your own  version file</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="8" column="2">
+            <property name="name">
+                <cstring>pushButton4</cstring>
+            </property>
+            <property name="text">
+                <string>Edit file...</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Allows you to edit your program version s file directly. This easy, you just need to write in the command that gives you the line containing the version of the program</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>Edit your version file directly</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="4" column="2">
+            <property name="name">
+                <cstring>pushButton2</cstring>
+            </property>
+            <property name="text">
+                <string>Edit file...</string>
+            </property>
+        </widget>
+        <widget class="QToolButton" row="4" column="1">
+            <property name="name">
+                <cstring>toolButton2</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>1</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="minimumSize">
+                <size>
+                    <width>20</width>
+                    <height>20</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>...</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Select System file description file here</string>
+            </property>
+            <property name="whatsThis" stdset="0">
+                <string>Select System file description file here</string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<customwidgets>
+</customwidgets>
+<connections>
+    <connection>
+        <sender>toolButton1</sender>
+        <signal>clicked()</signal>
+        <receiver>FilesConfig</receiver>
+        <slot>commandButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>toolButton2</sender>
+        <signal>clicked()</signal>
+        <receiver>FilesConfig</receiver>
+        <slot>systemButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>toolButton3</sender>
+        <signal>clicked()</signal>
+        <receiver>FilesConfig</receiver>
+        <slot>logButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>toolButton4</sender>
+        <signal>clicked()</signal>
+        <receiver>FilesConfig</receiver>
+        <slot>varsionButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton1</sender>
+        <signal>clicked()</signal>
+        <receiver>FilesConfig</receiver>
+        <slot>editButton1_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton2</sender>
+        <signal>clicked()</signal>
+        <receiver>FilesConfig</receiver>
+        <slot>editButton2_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton3</sender>
+        <signal>clicked()</signal>
+        <receiver>FilesConfig</receiver>
+        <slot>editButton3_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>pushButton4</sender>
+        <signal>clicked()</signal>
+        <receiver>FilesConfig</receiver>
+        <slot>editButton4_clicked()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>commandButton_clicked()</slot>
+    <slot>systemButton_clicked()</slot>
+    <slot>logButton_clicked()</slot>
+    <slot>varsionButton_clicked()</slot>
+    <slot>editButton1_clicked()</slot>
+    <slot>editButton2_clicked()</slot>
+    <slot>editButton3_clicked()</slot>
+    <slot>editButton4_clicked()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>klineedit.h</includehint>
+    <includehint>klineedit.h</includehint>
+    <includehint>klineedit.h</includehint>
+    <includehint>klineedit.h</includehint>
+</includehints>
+</UI>

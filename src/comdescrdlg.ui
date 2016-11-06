@@ -1,0 +1,181 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>CommandDescrDlg</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>CommandDescrDlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>482</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Command Description Dialog</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="1" column="0">
+            <property name="name">
+                <cstring>TextLabel1</cstring>
+            </property>
+            <property name="text">
+                <string>Command list:</string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="5" column="0">
+            <property name="name">
+                <cstring>textLabel3</cstring>
+            </property>
+            <property name="text">
+                <string>Description:</string>
+            </property>
+        </widget>
+        <widget class="KTextBrowser" row="6" column="0" rowspan="1" colspan="4">
+            <property name="name">
+                <cstring>kTextBrowser1</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="1" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>dlg_title</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;User defined commands and their descriptions&lt;/b&gt;</string>
+            </property>
+            <property name="alignment">
+                <set>AlignVCenter</set>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="2" column="3">
+            <property name="name">
+                <cstring>addButton</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>1</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>Add</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="3" column="3">
+            <property name="name">
+                <cstring>modifyButton</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>1</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>Modify</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="4" column="3">
+            <property name="name">
+                <cstring>removeButton</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>1</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="text">
+                <string>Remove</string>
+            </property>
+        </widget>
+        <spacer row="3" column="2">
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Fixed</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>50</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QListBox" row="2" column="0" rowspan="3" colspan="2">
+            <item>
+                <property name="text">
+                    <string>New Item</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>listBox1</cstring>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>listBox1</sender>
+        <signal>selected(QListBoxItem*)</signal>
+        <receiver>CommandDescrDlg</receiver>
+        <slot>listBox1_selected(QListBoxItem*)</slot>
+    </connection>
+    <connection>
+        <sender>listBox1</sender>
+        <signal>doubleClicked(QListBoxItem*)</signal>
+        <receiver>CommandDescrDlg</receiver>
+        <slot>listBox1_doubleClicked(QListBoxItem*)</slot>
+    </connection>
+    <connection>
+        <sender>listBox1</sender>
+        <signal>clicked(QListBoxItem*)</signal>
+        <receiver>CommandDescrDlg</receiver>
+        <slot>listBox1_clicked(QListBoxItem*)</slot>
+    </connection>
+    <connection>
+        <sender>addButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CommandDescrDlg</receiver>
+        <slot>addButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>modifyButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CommandDescrDlg</receiver>
+        <slot>modifyButton_clicked()</slot>
+    </connection>
+    <connection>
+        <sender>removeButton</sender>
+        <signal>clicked()</signal>
+        <receiver>CommandDescrDlg</receiver>
+        <slot>removeButton_clicked()</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>listBox1_selected(QListBoxItem*)</slot>
+    <slot>listBox1_doubleClicked(QListBoxItem*)</slot>
+    <slot>listBox1_clicked(QListBoxItem*)</slot>
+    <slot>addButton_clicked()</slot>
+    <slot>modifyButton_clicked()</slot>
+    <slot>removeButton_clicked()</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>ktextbrowser.h</includehint>
+</includehints>
+</UI>

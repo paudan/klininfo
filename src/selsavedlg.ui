@@ -1,0 +1,192 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>SelSaveDlg</class>
+<widget class="QDialog">
+    <property name="name">
+        <cstring>SelSaveDlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>464</width>
+            <height>296</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Select what to save</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="text">
+                <string>Select what to save:</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="1" column="0">
+            <property name="name">
+                <cstring>checkBox1</cstring>
+            </property>
+            <property name="text">
+                <string>Command list and their descriptions</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="2" column="0">
+            <property name="name">
+                <cstring>checkBox2</cstring>
+            </property>
+            <property name="text">
+                <string>System file list and their descriptions</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="4" column="0">
+            <property name="name">
+                <cstring>checkBox4</cstring>
+            </property>
+            <property name="text">
+                <string>Disk usage information</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="5" column="0">
+            <property name="name">
+                <cstring>checkBox5</cstring>
+            </property>
+            <property name="text">
+                <string>Memory information</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="6" column="0">
+            <property name="name">
+                <cstring>checkBox6</cstring>
+            </property>
+            <property name="text">
+                <string>Custom information</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="7" column="0">
+            <property name="name">
+                <cstring>checkBox7</cstring>
+            </property>
+            <property name="text">
+                <string>printenv information</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="1" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>checkBox8</cstring>
+            </property>
+            <property name="text">
+                <string>Process information</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="8" column="0">
+            <property name="name">
+                <cstring>checkBox15</cstring>
+            </property>
+            <property name="text">
+                <string>Font information</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="9" column="2">
+            <property name="name">
+                <cstring>pushButton2</cstring>
+            </property>
+            <property name="maximumSize">
+                <size>
+                    <width>87</width>
+                    <height>32767</height>
+                </size>
+            </property>
+            <property name="text">
+                <string>Select</string>
+            </property>
+        </widget>
+        <spacer row="9" column="1">
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Fixed</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>90</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+        <widget class="QCheckBox" row="2" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>checkBox9</cstring>
+            </property>
+            <property name="text">
+                <string>Partition information</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="3" column="0">
+            <property name="name">
+                <cstring>checkBox3</cstring>
+            </property>
+            <property name="text">
+                <string>Log file list and their descriptions</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="5" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>checkBox11</cstring>
+            </property>
+            <property name="text">
+                <string>Network information</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="6" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>checkBox12</cstring>
+            </property>
+            <property name="text">
+                <string>Package information</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="4" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>checkBox10</cstring>
+            </property>
+            <property name="text">
+                <string>Module information</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="7" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>checkBox13</cstring>
+            </property>
+            <property name="text">
+                <string>RPM package information</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="8" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>checkBox14</cstring>
+            </property>
+            <property name="text">
+                <string>Program version information</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="3" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>checkBox16</cstring>
+            </property>
+            <property name="text">
+                <string>Hard disk information</string>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

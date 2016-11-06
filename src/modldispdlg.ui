@@ -1,0 +1,44 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>ModuleDisplaydlg</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>ModuleDisplaydlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>482</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Module Display Dialog</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>dlg_title</cstring>
+            </property>
+            <property name="text">
+                <string>Modules, loaded currently in Linux module:</string>
+            </property>
+        </widget>
+        <widget class="QTable">
+            <property name="name">
+                <cstring>table1</cstring>
+            </property>
+            <property name="numRows">
+                <number>3</number>
+            </property>
+            <property name="numCols">
+                <number>3</number>
+            </property>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

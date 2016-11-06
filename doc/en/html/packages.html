@@ -1,0 +1,26 @@
+<html><head><title>The Packages section</title><link rel="stylesheet" href="help:/common/kde-default.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.48"><meta name="keywords" content="KLinInfo, printenv, RPM, Package"><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><meta name="GENERATOR" content="KDE XSL Stylesheet V1.13 using libxslt"><link rel="home" href="index.html" title="The KLinInfo Handbook"><link rel="up" href="using-klininfo.html" title="Chapter 2. Using KLinInfo"><link rel="previous" href="information.html" title="The Linux Information Section"><link rel="next" href="settings.html" title="Chapter 3. KLinInfo settings"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><table border="0" cellpadding="0" cellspacing="0" width="100%"><tr class="header"><td colspan="2"> </td></tr><tr id="logo"><td valign="top"><img src="help:/common/kde_logo.png" alt="KDE -         The K Desktop Environment" width="296" height="79" border="0"></td><td valign="middle" align="center" id="location"><h1>The Packages section</h1></td></tr></table><table width="100%" class="header"><tbody><tr><td align="left" class="navLeft" width="33%"><a accesskey="p" href="information.html">Prev</a></td><td align="center" class="navCenter" width="34%">Using KLinInfo</td><td align="right" class="navRight" width="33%"> 
+		      <a accesskey="n" href="settings.html">Next</a></td></tr></tbody></table><div class="sect1"><div class="titlepage"><div><h2 class="title" style="clear: both"><a name="packages"></a>The Packages section</h2></div></div><p>Here you can get various information about Linux packages (RPM, packages, that are installed in Slackware), also get a program version list.
+</p><div class="sect2"><div class="titlepage"><div><h3 class="title"><a name="rpm-packages"></a>The RPM search window</h3></div></div><p>
+<div class="screenshot"><div xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" class="mediaobject"><hr><img src="packages_rpm.png"><hr></div></div>
+</p><p>
+This gives you the possibility to view available RPM packages. You can get information on RPM packages, that contain the your input string, and pressing <span xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" style="background-color: rgb(240,240,240);   color: rgb(0,0,0);">List all packages</span> will list all RPM packages, that are present on your Linux system.
+</p></div><div class="sect2"><div class="titlepage"><div><h3 class="title"><a name="slackware-packages"></a>Package Information window</h3></div></div><p>This outputs the complete list of Slackware packages, installed on this Linux system, as well as their sizes, compressed and uncompressed. You can also preview the descriptions and the files that each package contains, in the tab window below.  
+</p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><h3 class="title">Note</h3><p>Note: this is only the list of Slackware packages (that is, only <tt>.tgz</tt> or <tt>.tar.gz</tt> packages. Packages, like Mandrake or Redhat <tt>RPM</tt> files, will not be listed here. You can get a list of them in the <span xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" style="background-color: rgb(240,240,240);   color: rgb(0,0,0);">RPM packages</span> window.</p></div><div class="screenshot"><div xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" class="mediaobject"><hr><img src="packages_slack.png" alt="Modules information"><hr></div></div></div><div class="sect2"><div class="titlepage"><div><h3 class="title"><a name="program-versions"></a>The RPM search window</h3></div></div><p>
+<div class="screenshot"><div xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" class="mediaobject"><hr><img src="packages_vers.png" alt="A screenshot of KLinInfo Program versions window"><hr></div></div>
+</p><p>
+This is where you can get versions of the programs defined in file 
+<tt>~/.klininfo/filever</tt>. Editing it is easy -  - all that you need to define is program name and command which outputs the program version information, for e.g. for <span xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" class="command"><b>gcc</b></span> you should write <span xmlns:doc="http://nwalsh.com/xsl/documentation/1.0" class="command"><b>gcc --version</b></span>	.
+</p><p>
+An example of file <tt>filever</tt>:
+</p><p>
+<pre class="programlisting">
+# This is a list of version commands. You can add your own to it.
+
+gcc --version
+php -v
+python -V
+xpdf -v
+galeon --version
+perl --version
+</pre>
+</p></div></div><table width="100%" class="bottom-nav"><tr><td width="33%" align="left" valign="top" class="navLeft"><a href="information.html">Prev</a></td><td width="34%" align="center" valign="top" class="navCenter"><a href="index.html">Home</a></td><td width="33%" align="right" valign="top" class="navRight"><a href="settings.html">Next</a></td></tr><tr><td width="33%" align="left" class="navLeft">The Linux Information Section </td><td width="34%" align="center" class="navCenter"><a href="using-klininfo.html">Up</a></td><td width="33%" align="right" class="navRight"> KLinInfo settings</td></tr></table></body></html>

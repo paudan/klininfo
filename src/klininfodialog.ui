@@ -1,0 +1,227 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>KLinInfoDialog</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>KLinInfoDialog</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>687</width>
+            <height>482</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>KLinInfo v0.2</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="KListView" row="0" column="0">
+            <column>
+                <property name="text">
+                    <string></string>
+                </property>
+                <property name="clickable">
+                    <bool>true</bool>
+                </property>
+                <property name="resizable">
+                    <bool>true</bool>
+                </property>
+            </column>
+        <item>
+            <property name="text">
+                <string>Command descriptions</string>
+            </property>
+            <property name="pixmap">
+                <pixmap>image0</pixmap>
+            </property>
+        </item>
+        <item>
+            <property name="text">
+                <string>Fonts</string>
+            </property>
+            <property name="pixmap">
+                <pixmap>image1</pixmap>
+            </property>
+            <item>
+                <property name="text">
+                    <string>Font families</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>KDE fonts</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </item>
+        </item>
+        <item>
+            <property name="text">
+                <string>Important files</string>
+            </property>
+            <property name="pixmap">
+                <pixmap>image2</pixmap>
+            </property>
+            <item>
+                <property name="text">
+                    <string>log files</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>System files</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </item>
+        </item>
+        <item>
+            <property name="text">
+                <string>Information</string>
+            </property>
+            <property name="pixmap">
+                <pixmap>image3</pixmap>
+            </property>
+            <item>
+                <property name="text">
+                    <string>Disk information</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Memory information</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Other information</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>printenv information</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Program versions</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </item>
+        </item>
+        <item>
+            <property name="text">
+                <string>Network</string>
+            </property>
+            <property name="pixmap">
+                <pixmap>image4</pixmap>
+            </property>
+            <item>
+                <property name="text">
+                    <string>Samba information</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </item>
+        </item>
+        <item>
+            <property name="text">
+                <string>Packages</string>
+            </property>
+            <property name="pixmap">
+                <pixmap>image5</pixmap>
+            </property>
+            <item>
+                <property name="text">
+                    <string>RPM</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Slackware</string>
+                </property>
+                <property name="pixmap">
+                    <pixmap></pixmap>
+                </property>
+            </item>
+        </item>
+            <property name="name">
+                <cstring>kListView2</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>0</hsizetype>
+                    <vsizetype>7</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+        </widget>
+        <widget class="QFrame" row="0" column="1">
+            <property name="name">
+                <cstring>frame3</cstring>
+            </property>
+            <property name="frameShape">
+                <enum>StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+                <enum>Sunken</enum>
+            </property>
+        </widget>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="590">789c4d90414ec3301045f7398515ef2a943624414588238058222116137b2675e380046581107767be47699964e1f7f2ff44f276e39e9f1edc665b7d9ee894820b07fa709bf8b52cdf2faff73f55ddde38bc836bebabaa6e5c708fef6f8cf3a867bf2b03cc2bee3b6032ec777d298ae1beb5af9361b80e0390805ddbedba12f6c08186db81804720f5d4520f8cc030acdd83a1e8000330321ee00214894c01381b8a589757b46ea3e33144e3a8e7b30b984871fcef18e3398cabf332f9e202c7d19c1c2693586a4e15b3485219e2b1b8a429f1499230cfbab05cd8a4c039e5547e644ea6ac5d9fd4cd3c174793e8fe2c9934b7588eca762dcb25d7107665549735d734ab9a2f39950945a496b3c31d586abe38bda5f3d4bf77d51f4cdc9ee7</data>
+    </image>
+    <image name="image1">
+        <data format="XPM.GZ" length="545">789c6d90cb6ac3301045f7fe0a61ed4c49a2382a09a59fd0d265a174311abd6c480369ba28a5ffdeb952ec24d02b63742e6724e365a75e5f9e54b76c3e4f741a5871a6a3eafcd77efffdf6fef8d3b4e65ee1592bd3de35ed42b17a3e7c04ec9decf5aa0448c0def4abbe981a68c9ee2c013370db6f4d8cc008a40d19da003d902dafd9028709abcc401fb0802330461f8881a9628c75364c586717128d103927fbb963c49377d75d40746057bb7a8c46c7c1bbda918f14099d1ceaceb3d592b08f53e78b254972e0c5cb25a25f7999862caf90ce1daea550ac71f6caf70db066af76e28db75efacfc3b514c674e395952e9dfca539edef43f307a4ee8ff7</data>
+    </image>
+    <image name="image2">
+        <data format="XPM.GZ" length="530">789c8d90cb4ec3301045f7f90a2bde4588d64d8c5a213e01c4b252c5623c1e3b59b495a02c10e2df999b963ee20d375ecc3933762ccf1ab37e7d36cdacfa38d06160c33dbd9b267e6eb75f9bb7a7efaa760f06cb1957df55f5bd61f3b2df09eaa0b59d8f0112b075edbc1d270760e7ba53d7023df99527600f5cb64b77ec262075e4a80346207b5eb00732300a3e600626cdb12b7f98d278438d458842d0faec188914c3b513c40a87c2b1c430757ae8d409c754b8ac07167b4526ce4ab6b970ba6e5cee91e176ae70197321fc674e06cde5bffa4ae7d43f8fd52f3ab88654</data>
+    </image>
+    <image name="image3">
+        <data format="XPM.GZ" length="545">789c5d90dd4ac4301046effb14a17357a4bbd9b6d2457c04c54b41bc9899b44d175641d70b11dfdd7e93c6a29306724ebefc34bbca3d3edcb96a57bc5ff832abd3c86fae0a1fe7f3e7d3f3ed5751fa6b87efe07c795594b55377fffa32604ccb98f656c013b0f1cdbeb124035bdfaeb30aecb83b760c1c807d93d7c684bdef1be00ce4963db7c011a85d0e4f09f5a01d3000c3800614e06865174611d5b97e1d8bd23f474124ac363b1519b25d1d6232ae36b94511ad7622735092ac8498dcb29919749ecdd166b05f3417724e24ce9a7271ca36683e977436bbc4624c39dc2fd925c6b4fdaf59c6d2cdc1c61351fdc7e1bdd4dee0fba6f8013f6a7fc2</data>
+    </image>
+    <image name="image4">
+        <data format="XPM.GZ" length="515">789c6d8e4d0ac2301046f73d45687645d2d656298847505c0ae2623a498c8b2a685d887877338dd31f749245de97c9bca489d8ef362249a37b0bed19053ab889443f9ae67938ae5f519c2f05ed4ce4f12c8a9540b1bd5e0c9da53fcbac2b421db0caab82d004c4392e0881b02af8d6114209399484961017dc7c0a687d1122a136b4086b426bf9562925b99402c9595dd7e86b92a19fa1b59d66e6647eb27f7d41d967528eb49cb114ad04b021e361cef9d66f1f4b477f1e49877983b4cfd4201d79c9da49a1f75ad715b74ffe1c1eabf8bd8a3e96a176c0</data>
+    </image>
+    <image name="image5">
+        <data format="XPM.GZ" length="620">789c3d90c14e84301086ef3c45436f1bd305015d637c048d4713e36118da6d671748743d18e3bb3b3f851d48e0fbfa7726ed7e67de5e9fcd6e5f7c5de892d870a44fb31bbec7f1e7fde3e9b728eb3b83f7ded4e54d513ac3e6659e3cfe356c6cb514b007367553354bf2046ceb765d256047dd4347400b3c345575688029e3a1ce28406aa9a6163803b9db061d37e40e1832f26dc6f38621003d70f078800330846d75ca387862e09851d7975671c31c76ce5a42f53db3736e717660f2a8d007cece0e47751145d17376cc57e76358a639726e73da34bb90283b110a925d4a290411fd9c74d6ba57bc2aa12449f36bcefb74163927d11ee3eac44bd457e0e2b637784fda1e6acdf592023a62fcb4e61c69729e45875aadec168b9913ce7975b88238467be4abd35b5a0a672fff1e8b7fec61a864</data>
+    </image>
+</images>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>klistview.h</includehint>
+</includehints>
+</UI>

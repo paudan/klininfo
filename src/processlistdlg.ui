@@ -1,0 +1,170 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>ProcessListDlg</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>ProcessListDlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>604</width>
+            <height>514</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Process Display Dialog</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QGroupBox" row="2" column="2" rowspan="3" colspan="2">
+            <property name="name">
+                <cstring>groupBox1</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>5</hsizetype>
+                    <vsizetype>0</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="title">
+                <string>Output format:</string>
+            </property>
+            <grid>
+                <property name="name">
+                    <cstring>unnamed</cstring>
+                </property>
+                <widget class="QRadioButton" row="1" column="0">
+                    <property name="name">
+                        <cstring>radioButton2</cstring>
+                    </property>
+                    <property name="text">
+                        <string>User-oriented</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Also displays information of memory and CPU usage percentage</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="0" column="0">
+                    <property name="name">
+                        <cstring>radioButton1</cstring>
+                    </property>
+                    <property name="text">
+                        <string>As registers</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Displays registers, used by processes</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="1" column="1">
+                    <property name="name">
+                        <cstring>radioButton4</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Normal</string>
+                    </property>
+                </widget>
+                <widget class="QRadioButton" row="0" column="1">
+                    <property name="name">
+                        <cstring>radioButton3</cstring>
+                    </property>
+                    <property name="text">
+                        <string>Signal</string>
+                    </property>
+                    <property name="toolTip" stdset="0">
+                        <string>Displays output as signals</string>
+                    </property>
+                </widget>
+            </grid>
+        </widget>
+        <widget class="QTable" row="1" column="0" rowspan="1" colspan="4">
+            <property name="name">
+                <cstring>table1</cstring>
+            </property>
+            <property name="numRows">
+                <number>3</number>
+            </property>
+            <property name="numCols">
+                <number>9</number>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="2" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>checkBox1</cstring>
+            </property>
+            <property name="text">
+                <string>Show only processes, run by current user</string>
+            </property>
+        </widget>
+        <widget class="QCheckBox" row="3" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>checkBox2</cstring>
+            </property>
+            <property name="text">
+                <string>Show only running processes</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string></string>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="text">
+                <string>Process, currently run on this machine:</string>
+            </property>
+        </widget>
+        <widget class="QPushButton" row="0" column="3">
+            <property name="name">
+                <cstring>refreshButton1</cstring>
+            </property>
+            <property name="text">
+                <string>Refresh list</string>
+            </property>
+            <property name="toolTip" stdset="0">
+                <string>Refresh process information</string>
+            </property>
+        </widget>
+        <spacer row="0" column="1" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>spacer2</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>180</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+        <spacer row="4" column="0">
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Fixed</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+    </grid>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

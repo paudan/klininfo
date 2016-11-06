@@ -1,0 +1,44 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>PrintEnvDlg</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>PrintEnvDlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>482</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>printenv Dialog</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>dlg_title</cstring>
+            </property>
+            <property name="text">
+                <string>&lt;b&gt;The output of &lt;i&gt;printenv&lt;/i&gt; command&lt;/b&gt;</string>
+            </property>
+            <property name="alignment">
+                <set>AlignCenter</set>
+            </property>
+        </widget>
+        <widget class="QTextBrowser">
+            <property name="name">
+                <cstring>textBrowser1</cstring>
+            </property>
+        </widget>
+    </vbox>
+</widget>
+<functions>
+    <function access="protected">loadPEString()</function>
+</functions>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

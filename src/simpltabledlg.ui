@@ -1,0 +1,50 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>VersionInfoDlg</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>VersionInfoDlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>484</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Simple Table Dialog</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>dlg_title</cstring>
+            </property>
+            <property name="text">
+                <string>Programs, installed in this Linux system, and their versions:</string>
+            </property>
+        </widget>
+        <widget class="QTable">
+            <property name="name">
+                <cstring>table1</cstring>
+            </property>
+            <property name="resizePolicy">
+                <enum>AutoOneFit</enum>
+            </property>
+            <property name="numRows">
+                <number>20</number>
+            </property>
+            <property name="numCols">
+                <number>2</number>
+            </property>
+            <property name="readOnly">
+                <bool>true</bool>
+            </property>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+</UI>

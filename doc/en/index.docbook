@@ -1,0 +1,825 @@
+<?xml version="1.0" ?>
+<!DOCTYPE book PUBLIC "-//KDE//DTD DocBook XML V4.1-Based Variant V1.0//EN" "dtd/kdex.dtd" [
+  <!ENTITY klininfo '<application>KLinInfo</application>'>
+  <!ENTITY kapp "&klininfo;"><!-- replace klininfo here -->
+  <!ENTITY % addindex "IGNORE">
+  <!ENTITY % English "INCLUDE"><!-- change language only here -->
+
+
+  <!-- Do not define any other entities; instead, use the entities
+       from kde-genent.entities and $LANG/user.entities. -->
+]>
+<!-- kdoctemplate v0.8 October 1 1999
+     Minor update to "Credits and Licenses" section on August 24, 2000
+     Removed "Revision history" section on 22 January 2001   -->
+
+<!-- ................................................................ -->
+
+<!-- The language must NOT be changed here. -->
+
+<book lang="&language;">
+
+<!-- This header contains all of the meta-information for the document such
+as Authors, publish date, the abstract, and Keywords -->
+
+<bookinfo>
+<title>The KLinInfo Handbook</title>
+
+<authorgroup>
+<author>
+<firstname>Paulius</firstname>
+<othername></othername>
+<surname>Danenas</surname>
+<affiliation>
+<address><email>paulius.dan@takas.lt</email></address>
+</affiliation>
+</author>
+</authorgroup>
+
+<!-- TRANS:ROLES_OF_TRANSLATORS -->
+
+<copyright>
+<year>2004</year>
+<holder>Paulius Danenas</holder>
+</copyright>
+
+<legalnotice>&FDLNotice;</legalnotice>
+
+<date>08/16/2004</date>
+<releaseinfo>1.02.00</releaseinfo>
+
+<!-- Abstract about this handbook -->
+
+<abstract>
+<para>
+&klininfo; is an easy-to-use application written for people who want to get useful information about their Linux system. It also has a possibility to save all the information to HTML files so it could be used for generating reports about the condition
+of the system being used.
+</para>
+</abstract>
+
+<!-- This is a set of Keywords for indexing by search engines.
+Please at least include KDE, the KDE package it is in, the name
+ of your application, and a few relevant keywords. -->
+
+<keywordset>
+<keyword>KLinInfo</keyword>
+<keyword>printenv</keyword>
+<keyword>RPM</keyword>
+<keyword>Package</keyword>
+</keywordset>
+
+</bookinfo>
+
+<!-- The contents of the documentation begin here.  Label
+each chapter so with the id attribute. This is necessary for two reasons: it
+allows you to easily reference the chapter from other chapters of your
+document, and if there is no ID, the name of the generated HTML files will vary
+from time to time making it hard to manage for maintainers and for the CVS
+system. Any chapter labelled (OPTIONAL) may be left out at the author's
+discretion. Other chapters should not be left out in order to maintain a
+consistent documentation style across all KDE apps. -->
+
+<!--<anchor id="KLinInfo_about"></anchor>-->
+<chapter id="introduction">
+<title>Introduction</title>
+
+<para>
+&kapp; is a program which collects a lot of information of your Linux system and allows to save it to a user defined HTML file or to a set of files. 
+</para>
+<para>
+Please report any problems or feature requests to the author's email.
+</para>
+</chapter>
+
+<chapter id="using-klininfo">
+<title>Using KLinInfo</title>
+
+<sect1 id="command_descriptions">
+<title>The Command Description window</title>
+<para>
+This window allows to save a list of Linux commands and user-defined descriptions for them, so it's like a notepad for commands. You can add new Linux commands with their descriptions, edit them or remove. The description can be any size, and it can contain HTML tags (like <markup><![CDATA[<b>]]></markup> for bold text, <markup><![CDATA[<i>]]></markup> for italic, <markup><![CDATA[<p>]]></markup> for paragraph and etc.)
+</para>
+<para>
+The information by default is stored in <filename>~/.klininfo/commandrc.kl</filename> file, but if you wish to use another file, you can set it in Preferences dialog ( <guimenuitem>Settings->Program Preferences</guimenuitem> ), in the <guimenuitem>Files</guimenuitem> tab.  
+<screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="command_desc.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Command Description window</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+
+</sect1>
+
+<sect1 id="Fonts">
+<title>Font section</title>
+<para>This is where you can get the list of TrueType fonts (<abbrev>TTF</abbrev>), and get a preview of them in almost every avilbale style and size. You can also save a list of their names as the examples in the HTML file. You can also define the string for preview in the <guimenuitem>Program Preferences</guimenuitem> dialog.
+</para>
+<para>There are two tabs for fonts, one for KDE fonts, and one for the font families. Why?
+Well, it's because these two list may differ, but it should be the same.</para>
+
+<sect2> 
+<title>KDE fonts</title>
+<para>This is the window for KDE font preview:
+<screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="fonts_kde.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>KDE fonts window</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</sect2>
+
+<sect2> 
+<title>Font families</title>
+<para>This is the window for font preview:
+<screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="fonts_families.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Font Families window</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</sect2>
+
+</sect1>
+
+<sect1 id="important_files">
+<title>Files section</title>
+<para>This window allows to save a list of special Linux files with texts, describing them. It's very similar to the command description dialog -  you can add new files with their descriptions, edit them or remove (not the files, only the lines with their descriptions), except that you can also preview the contents of these files (if it is possible). The description can contain HTML tags (like <markup><![CDATA[<b>]]></markup> for bold text, <markup><![CDATA[<i>]]></markup> for italic, <markup><![CDATA[<p>]]></markup> for paragraph and etc.)
+</para>
+
+<sect2> 
+<title>Log files window</title>
+<para>The Log File preview window is meant for log files and their descriptions. The data is kept in <filename>~/.klininfo/logrc.kl</filename> by default, and this can be changed in Preferences dialog.
+<screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="files_log.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Log Files window</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</sect2>
+
+<sect2> 
+<title>System Files window</title>
+<para>The System Files preview window shuould be used for various system configuration files and their descriptions. The data is kept in <filename>~/.klininfo/systemrc.kl</filename> by default, and this can also be changed in Preferences dialog.
+<screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="files_system.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>System Files window</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="information">
+<title>The Linux Information Section</title>
+<para>This section includes such types of information, as disk usage information, memory information, printenv information, process information, partition information, modules information and custom information, that could be read after running script, that could be easily edited by the user. </para>
+
+<sect2>
+<title>Disk Information window</title>
+<para>This window is a graphical representation of <userinput>du</userinput> command. It allows you to display the information in different sizes (KB, MB, etc.) 
+</para>
+<para>
+<screenshot>
+<screeninfo>Memory information</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="info_du.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Disk ionformation</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</sect2>
+
+<sect2>
+<title>Memory Information window</title>
+<para>This is where you can find out about memory usage on your system. The results are represented in bytes, kilobytes and megabytes. 
+</para>
+<para>
+<screenshot>
+<screeninfo>memory information</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="info_memory.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Memory information</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</sect2>
+
+<sect2>
+<title>Other Information</title>
+<para>This provides the output of a <command>bash</command> script. This script is named <filename>all_info</filename> and can be edited freely, either selecting <guimenuitem>Settings->Edit Files->Information Script</guimenuitem>, either manually. After install this file should reside in <filename class="directory">/usr/bin</filename>. 
+</para>
+</sect2>
+
+<sect2>
+<title>printenv window</title>
+<para>This is where you can get all output of <command>printenv</command>. 
+</para>
+<para>
+<screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="info_printenv.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Memory information</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</sect2>
+
+<sect2>
+<title>Process Information window</title>
+<para>This allows you to view information on processes, run on current machine. The process information can be displayed as user-oriented or normal styles, or either as signals or registers. Also there's a possibility to view either processes, run by current user (if <guibutton>Show only processes, run by current user</guibutton> is checked), either only running processes (if <guibutton>Show only running processes</guibutton> is checked), or combine both of them, by checking both checkboxes.  
+</para>
+<para>For more detailed about processesinformation about processes, refer to <command>ps</command> man page.
+</para>
+<para> 
+<screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="info_process.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Process information</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</sect2>
+
+<sect2 id="partition-info">
+<title>Partition Information window</title>
+<para>Here you can view the information about your hard disks and partitions. This is the information, taken from <command>fdisk</command> and <command>cfdisk</command>, and can be displayed as:
+</para>
+<para>
+<variablelist>
+<varlistentry>
+<term><guimenu>With sizes in cylinders</guimenu>
+</term>
+<listitem>
+<para>Displays the partition tables with sizes of partitions as cylinders</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guimenu>With sizes in sectors</guimenu>
+</term>
+<listitem>
+<para>Displays the partition tables, giving their start and end sectors</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guimenu>In sector order format</guimenu>
+</term>
+<listitem>
+<para>Displays the partition tables in sector order format(the number of the partition,  the partition  type,  the first sector, the last sector, the offset from the first sector
+of the partition to the start of the data, the length of the partition, the  filesystem  type (with the hex value in parenthesis), and the flags (with the hex value in parenthesis). Also free and unusable space is printed.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guimenu>Partition table in raw format</guimenu>
+</term>
+<listitem>
+<para>Displays the partition tables in raw format( the number of the partition, the flags (in hex), the starting head, sector and cylinder, the filesystem ID (in hex), the ending head, sector and cylinder, the starting  sector in the partition and the number of sectors in the partition</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guimenu>In raw format</guimenu>
+</term>
+<listitem>
+<para>Displays the partition data in raw format( the sectors that would be written to disk if a write command is executed. The primary partition table is printed at first, followed by the partition tables associated with each logical partition. The data is printed in hex
+with 16 bytes per line.
+</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+<para> 
+<screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="info_partition.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Partition information</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+</sect2>
+
+<sect2 id="module-info">
+<title>Module Information window</title>
+<para>This gives the list of modules, currently used by Linux kernel. 
+</para>
+<screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="info_modules.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Modules information</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</sect2>
+
+</sect1>
+
+
+<sect1 id="packages">
+<title>The Packages section</title>
+<para>Here you can get various information about Linux packages (RPM, packages, that are installed in Slackware), also get a program version list.
+</para>
+
+<sect2 id="rpm-packages">
+<title>The RPM search window</title>
+<para>
+<screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="packages_rpm.png" format="PNG"/>
+	  </imageobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+This gives you the possibility to view available RPM packages. You can get information on RPM packages, that contain the your input string, and pressing <guibutton>List all packages</guibutton> will list all RPM packages, that are present on your Linux system.
+</para>
+</sect2>
+
+<sect2 id="slackware-packages">
+<title>Package Information window</title>
+<para>This outputs the complete list of Slackware packages, installed on this Linux system, as well as their sizes, compressed and uncompressed. You can also preview the descriptions and the files that each package contains, in the tab window below.  
+</para>
+<note><para>Note: this is only the list of Slackware packages (that is, only <filename >.tgz</filename> or <filename>.tar.gz</filename> packages. Packages, like Mandrake or Redhat <filename>RPM</filename> files, will not be listed here. You can get a list of them in the <guilabel>RPM packages</guilabel> window.</para>
+</note> 
+<screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="packages_slack.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>Modules information</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</sect2>
+
+<sect2 id="program-versions">
+<title>The RPM search window</title>
+<para>
+<screenshot>
+<screeninfo>Program Versions Tab</screeninfo>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="packages_vers.png" format="PNG"/>
+	  </imageobject>
+	  <textobject>
+	    <phrase>A screenshot of KLinInfo Program versions window</phrase>
+	  </textobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+This is where you can get versions of the programs defined in file 
+<filename class="directory">~/.klininfo/filever</filename>. Editing it is easy -  - all that you need to define is program name and command which outputs the program version information, for e.g. for <command>gcc</command> you should write <command>gcc --version</command>	.
+</para>
+<para>
+An example of file <filename>filever</filename>:
+</para>
+<para>
+<programlisting><![CDATA[
+# This is a list of version commands. You can add your own to it.
+
+gcc --version
+php -v
+python -V
+xpdf -v
+galeon --version
+perl --version
+]]></programlisting>
+</para>
+
+</sect2>
+
+</sect1>
+
+</chapter>
+
+<!--<anchor id="KLinInfo_settings"></anchor>-->
+<chapter id="settings">
+<title>&klininfo; settings</title>
+<para>This chapter will describe the &klininfo; Program Preferences dialog. This dialog gives you an opportunity to customize the application in any way you want. You can change display, font and other options, select files tobe used as databases or change the default editor. It can be called by selecting <guimenuitem>Settings->Program Preferences</guimenuitem> in the <guimenu>Settings</guimenu> menu.
+</para>
+
+<sect1 id="Font_options">
+<title>Font options</title>
+<para>
+<screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="options_font.png" format="PNG"/>
+	  </imageobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+Just select the font, it's size and style for all the windows in your application. You can select different font for different widgets of &klininfo;.
+</para>
+</sect1>
+
+<sect1 id="File_options">
+<title>Source files</title>
+<para>
+<screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="options_files.png" format="PNG"/>
+	  </imageobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+This is where you can select files to be used as databases for file viewing (file lists with their descriptions), command descriptions and version file. 
+</para>
+<para>
+The default files usually reside in directory <filename class="directory">~/.klininfo</filename>.</para>
+<para>
+<table frame="all">
+<title>Default &klininfo; files</title>
+<tgroup cols="2" align="justify" colsep="1" rowsep="1">
+<tbody>
+<row>
+<entry>Command Descriptions</entry>
+<entry><filename>~/.klininfo/commandrc.kl</filename></entry>
+</row>
+<row>
+<entry>System Files</entry>
+<entry><filename>~/.klininfo/systemrc.kl</filename></entry>
+</row>
+<row>
+<entry>Log Files</entry>
+<entry><filename>~/.klininfo/logrc.kl</filename></entry>
+</row>
+<row>
+<entry>Program version file</entry>
+<entry><filename>~/.klininfo/filever</filename></entry>
+</row>
+</tbody>
+</tgroup>
+</table>
+</para>
+<para>
+&klininfo; uses special type of files with extension <filename>.kl</filename>. This is a kind of structured text files with entries, that consist of file name and description. The description is written in the next line of the word <literal>DESCRIPTION</literal> and may contain various HTML tags, which affect it's displaying.</para> 
+<para>This is an example of <filename>.kl</filename> file:</para>
+<para>
+<programlisting><![CDATA[
+NAME: grep
+DESCRIPTION: 
+<p>   Searches for strings which have particular pattern, in files or in stdout.</p><p>   <i>Grep -e</i> is the same as 
+<i>egrep</i></p><p>   <i>Grep -f</i> is the same as <i>fgrep</i></p>
+<p>-c or --count options gives a possibility to print only a preferrable number of lines</p>
+******************************************************************
+NAME: vmstat
+DESCRIPTION:
+  Prints out the information and statistics of memory usage.
+******************************************************************
+NAME: amp
+DESCRIPTION: 
+<p>A console <b>mp3</b> player</p><p>It's usage is similar to <i>mpg123</i></p>
+******************************************************************
+]]></programlisting>
+</para>
+ 
+<para>The buttons in the right allow to edit those files directly with the editor that is set in <guibutton>Miscellaneous options</guibutton> in this dialog..</para> 
+<note><para>Although it's possible to edit all these files, it's not recommended to edit description files (with extension <filename>.kl</filename>) directly. It's easier to use <guibutton>Add</guibutton>/<guibutton>Edit</guibutton>/<guibutton>Remove</guibutton> buttons in Command description window and file viewing windows.</para></note>
+</sect1>
+
+<sect1 id="misc_options">
+<title>Miscellaneous options</title>
+<para>
+<screenshot>
+	<mediaobject>
+	  <imageobject>
+	    <imagedata fileref="options_misc.png" format="PNG"/>
+	  </imageobject>
+	</mediaobject>
+</screenshot>
+</para>
+<para>
+Here are some other options that could also be set:
+</para>
+<para>
+<variablelist>
+<varlistentry>
+<term><guimenu>Show table grid</guimenu></term> 
+<listitem> <para>If this is checked, you will be able to see the grid oin the table widgets in applications.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guimenu>Editor for custom file editing</guimenu></term>
+<listitem><para>Allows you to select your favorite editor for editing files, so youcan  use <application>kwrite</application>, <application>emacs</application> and other editors.</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term><guimenu>Text caption, used in font dialog display</guimenu></term>
+<listitem> <para>Define a string you want to see when you browse fonts in font display dialogs.</para>
+</listitem>
+</varlistentry>
+</variablelist>
+</para>
+</sect1>
+
+</chapter>
+
+<chapter id="commands">
+<title>Menu Reference</title>
+
+<sect1 id="kapp-mainwindow">
+<title>The main KLinInfo window</title>
+<para>This chapter briefly describes the &klininfo; menu.</para>
+
+<sect2>
+<title>The File Menu</title>
+<para>
+<variablelist>
+<varlistentry>
+<term><menuchoice>
+<guimenu>File</guimenu>
+<guimenuitem>Save</guimenuitem>
+<guimenuitem>To separate files</guimenuitem>
+</menuchoice></term>
+<listitem><para>Saves the information to separate <filename>HTML</filename> files in selected directory.</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<guimenu>File</guimenu>
+<guimenuitem>Save</guimenuitem>
+<guimenuitem>To a single file</guimenuitem>
+</menuchoice></term>
+<listitem><para>Saves the information to a single <filename>HTML</filename> file.</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>Alt</keycap><keycap>X</keycap></keycombo>
+</shortcut>
+<guimenu>File</guimenu>
+<guimenuitem>Quit</guimenuitem>
+</menuchoice></term>
+<listitem><para><action>Quits</action> &klininfo;.</para></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+
+<sect2>
+<title>The Settings Menu</title>
+<para>
+<variablelist>
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Edit files</guimenuitem>
+<guimenuitem>Command descriptions file</guimenuitem>
+</menuchoice></term>
+<listitem><para>Directly edit current command description file</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Edit files</guimenuitem>
+<guimenuitem>System files descriptions file</guimenuitem>
+</menuchoice></term>
+<listitem><para>Directly edit current file with descriptions of system files</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Edit files</guimenuitem>
+<guimenuitem>Log files descriptions file</guimenuitem>
+</menuchoice></term>
+<listitem><para>Directly edit current file with descriptions of log files</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Edit files</guimenuitem>
+<guimenuitem>Version file</guimenuitem>
+</menuchoice></term>
+<listitem><para>Directly edit current file with commands for versions of particular programs (commands)</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Edit files</guimenuitem>
+<guimenuitem>Information script</guimenuitem>
+</menuchoice></term>
+<listitem><para>Directly edit script <filename>all_info</filename></para></listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<guimenu>Settings</guimenu>
+<guimenuitem>Program preferences</guimenuitem>
+</menuchoice></term>
+<listitem><para>Shows the <guimenuitem>Preferences</guimenuitem> dialog</para></listitem>
+</varlistentry>
+</variablelist>
+</para>
+</sect2>
+
+<sect2>
+<title>The Help Menu</title>
+<para>
+<variablelist>
+<varlistentry>
+<term><menuchoice>
+<shortcut>
+<keycombo><keycap>F1</keycap></keycombo>
+</shortcut>
+<guimenu>Help</guimenu>
+<guimenuitem>Help</guimenuitem>
+</menuchoice></term>
+<listitem><para>Shows this help window.</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<guimenu>Help</guimenu>
+<guimenuitem>What's this?</guimenuitem>
+</menuchoice></term>
+<listitem><para>Lets you get short information by clicking on any object of the &klininfo; program window.</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<guimenu>Help</guimenu>
+<guimenuitem>About</guimenuitem>
+</menuchoice></term>
+<listitem><para>Shows About &klininfo; window.</para></listitem>
+</varlistentry>
+<varlistentry>
+<term><menuchoice>
+<guimenu>Help</guimenu>
+<guimenuitem>About KDE</guimenuitem>
+</menuchoice></term>
+<listitem><para>Shows About KDE window.</para></listitem>
+</varlistentry>
+</variablelist>
+</para>
+
+</sect2>
+</sect1>
+</chapter>
+
+<chapter id="faq">
+<title>Questions and Answers</title>
+
+&reporting.bugs;
+&updating.documentation;
+
+<qandaset id="faqlist">
+<para>Not implemented yet. Real questions will be added in the future :).</para>
+<qandaentry>
+<question>
+<para>My Mouse doesn't work. How do I quit &kapp;?</para>
+</question>
+<answer>
+<para>By pressing
+<phrase>
+<keycombo><keycap>Alt</keycap><keycap>F4</keycap></keycombo>
+</phrase>.</para>
+</answer>
+</qandaentry>
+</qandaset>
+</chapter>
+
+
+<chapter id="credits">
+
+
+<title>Credits and License</title>
+
+<para>
+&kapp;
+</para>
+<para>
+Program copyright 2004 Paulius Danenas. <email>paulius.dan@takas.lt</email>
+</para>
+<para>
+Contributors:
+<!--<itemizedlist>
+<listitem><para>Konqui the KDE Dragon <email>konqui@kde.org</email></para>
+</listitem>-->
+</para>
+
+<para>
+Documentation copyright 2004 Paulius Danenas. <email>paulius.dan@takas.lt</email>
+</para>
+
+<!-- TRANS:CREDIT_FOR_TRANSLATORS -->
+
+&underFDL;               <!-- FDL: do not remove. Commercial development should -->
+<!-- replace this with their copyright and either remove it or re-set this.-->
+
+&underGPL;        	 <!-- GPL License -->
+<!--&underBSDLicense;-->        <!-- BSD License -->
+<!--&underArtisticLicense;-->   <!-- BSD Artistic License -->
+&underX11License;        <!-- X11 License  -->
+
+</chapter>
+
+<appendix id="installation">
+<title>Installation</title>
+
+<sect1 id="getting-klininfo">
+<title>How to obtain KLinInfo</title>
+
+<para>Not implemented yet.</para>
+</sect1>
+
+<sect1 id="requirements">
+<title>Requirements</title>
+
+<para>
+In order to successfully use &klininfo;, you need KDE 3 with QT libraries. There aren't any special requirements for this program, except that it uses bash shell script, so it's preferred that the user should use bash shell in order to use all the &klininfo; features. &klininfo; uses about the same amount of memory as do other KDE programs.
+</para>
+
+<para>
+You can find a list of changes at <filename>
+/usr/share/doc/klininfo-0.2/ChangeLog></filename>.
+</para>
+</sect1>
+
+<sect1 id="compilation">
+<title>Compilation and Installation</title>
+
+<para>
+In order to compile and install &klininfo; on your system, type the following in the base
+directory of the distribution:
+<screen width="40">
+<prompt>%</prompt> <userinput>./configure</userinput>
+<prompt>%</prompt> <userinput>make</userinput>
+<prompt>%</prompt> <userinput>make install</userinput>
+</screen>
+</para>
+
+<para>Since KApp uses autoconf and automake you should have not trouble compiling it. <application>Automake v1.8</application> was used to create <literal>make</literal> scripts, but it should compile with earlier versions as well. Should you run into problems please report them to the author's mailing list.</para>
+
+</sect1>
+
+<sect1 id="configuration">
+<title>Configuration</title>
+
+<para>Not implemented yet.</para>
+
+</sect1>
+
+</appendix>
+
+&documentation.index;
+</book>
+<!--
+Local Variables:
+mode: sgml
+sgml-minimize-attributes:nil
+sgml-general-insert-case:lower
+sgml-indent-step:0
+sgml-indent-data:nil
+End:
+-->

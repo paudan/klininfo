@@ -1,0 +1,103 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>DiskUsageDlg</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>DiskUsageDlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>482</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Disk Usage Dialog</string>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QTable" row="1" column="0" rowspan="1" colspan="3">
+            <property name="name">
+                <cstring>table1</cstring>
+            </property>
+            <property name="numRows">
+                <number>3</number>
+            </property>
+            <property name="numCols">
+                <number>3</number>
+            </property>
+            <property name="showGrid">
+                <bool>false</bool>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="0">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="text">
+                <string>Display in:</string>
+            </property>
+        </widget>
+        <widget class="KComboBox" row="0" column="1">
+            <item>
+                <property name="text">
+                    <string>Kilobytes (KB)</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Megabytes (MB)</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Gigabytes (GB)</string>
+                </property>
+            </item>
+            <item>
+                <property name="text">
+                    <string>Easy readable</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>kComboBox1</cstring>
+            </property>
+        </widget>
+        <spacer row="0" column="2">
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Horizontal</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Expanding</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>351</width>
+                    <height>20</height>
+                </size>
+            </property>
+        </spacer>
+    </grid>
+</widget>
+<connections>
+    <connection>
+        <sender>kComboBox1</sender>
+        <signal>activated(int)</signal>
+        <receiver>DiskUsageDlg</receiver>
+        <slot>dispSelected(int)</slot>
+    </connection>
+</connections>
+<slots>
+    <slot>dispSelected(int)</slot>
+</slots>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>kcombobox.h</includehint>
+</includehints>
+</UI>

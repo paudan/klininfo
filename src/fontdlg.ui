@@ -1,0 +1,164 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>FontPreviewDlg</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>FontPreviewDlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>466</width>
+            <height>444</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Font Preview</string>
+    </property>
+    <property name="icon">
+        <pixmap>image0</pixmap>
+    </property>
+    <grid>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel" row="2" column="2">
+            <property name="name">
+                <cstring>textLabel2_2</cstring>
+            </property>
+            <property name="text">
+                <string>Font size:</string>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="3" column="2" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>comboBox1_2</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="2" column="0">
+            <property name="name">
+                <cstring>textLabel2</cstring>
+            </property>
+            <property name="text">
+                <string>Font style:</string>
+            </property>
+        </widget>
+        <widget class="QComboBox" row="3" column="0" rowspan="1" colspan="2">
+            <property name="name">
+                <cstring>comboBox1</cstring>
+            </property>
+        </widget>
+        <widget class="QListBox" row="0" column="4" rowspan="4" colspan="1">
+            <item>
+                <property name="text">
+                    <string>New Item</string>
+                </property>
+            </item>
+            <property name="name">
+                <cstring>listBox1</cstring>
+            </property>
+        </widget>
+        <widget class="QLabel" row="0" column="0" rowspan="1" colspan="4">
+            <property name="name">
+                <cstring>textLabel1</cstring>
+            </property>
+            <property name="text">
+                <string>Font families, found in your Linux system:</string>
+            </property>
+        </widget>
+        <widget class="KLineEdit" row="4" column="0" rowspan="1" colspan="5">
+            <property name="name">
+                <cstring>kLineEdit1</cstring>
+            </property>
+            <property name="sizePolicy">
+                <sizepolicy>
+                    <hsizetype>7</hsizetype>
+                    <vsizetype>7</vsizetype>
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                </sizepolicy>
+            </property>
+            <property name="alignment">
+                <set>AlignAuto</set>
+            </property>
+        </widget>
+        <spacer row="1" column="3" rowspan="2" colspan="1">
+            <property name="name">
+                <cstring>spacer2_2</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Fixed</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>61</height>
+                </size>
+            </property>
+        </spacer>
+        <spacer row="1" column="2">
+            <property name="name">
+                <cstring>spacer1_2</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Fixed</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>30</height>
+                </size>
+            </property>
+        </spacer>
+        <spacer row="1" column="1" rowspan="2" colspan="1">
+            <property name="name">
+                <cstring>spacer2</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Fixed</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>61</height>
+                </size>
+            </property>
+        </spacer>
+        <spacer row="1" column="0">
+            <property name="name">
+                <cstring>spacer1</cstring>
+            </property>
+            <property name="orientation">
+                <enum>Vertical</enum>
+            </property>
+            <property name="sizeType">
+                <enum>Fixed</enum>
+            </property>
+            <property name="sizeHint">
+                <size>
+                    <width>20</width>
+                    <height>30</height>
+                </size>
+            </property>
+        </spacer>
+    </grid>
+</widget>
+<images>
+    <image name="image0">
+        <data format="XPM.GZ" length="545">789c6d90cb6ac3301045f7fe0a61ed4c49a2382a09a59fd0d265a174311abd6c480369ba28a5ffdeb952ec24d02b63742e6724e365a75e5f9e54b76c3e4f741a5871a6a3eafcd77efffdf6fef8d3b4e65ee1592bd3de35ed42b17a3e7c04ec9decf5aa0448c0def4abbe981a68c9ee2c013370db6f4d8cc008a40d19da003d902dafd9028709abcc401fb0802330461f8881a9628c75364c586717128d103927fbb963c49377d75d40746057bb7a8c46c7c1bbda918f14099d1ceaceb3d592b08f53e78b254972e0c5cb25a25f7999862caf90ce1daea550ac71f6caf70db066af76e28db75efacfc3b514c674e395952e9dfca539edef43f307a4ee8ff7</data>
+    </image>
+</images>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>klineedit.h</includehint>
+</includehints>
+</UI>

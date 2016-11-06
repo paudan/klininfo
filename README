@@ -1,0 +1,22 @@
+/*KLinInfo, v0.2*/
+
+This program was created for gathering all the available information from this Linux system and using it to generate HTML files as reports. It has a simple interface and is very easy to use. It can give information on fonts, memory and disk usage, module and package information, as well as on many other issues. It can also be used as notepad for command or system files - it has an ability to store system or log file list or command list with their descriptions in separate files. There is also a posibility for using a script to retrieve more info (note, that this is a bash shell script so you should be using bash; otherwise you may have to adapt this script to your shell). 
+
+Installation
+
+Installing it doesn't differ from other Linux programs. If this is a tarball package (tar.gz), then at first, do a 
+
+$configure 
+
+to configure it, then  
+
+$make
+
+and at the end make it's install with
+
+$make install.
+
+
+Requirements
+
+This version was compiled on Linux Slackware 10.0 with KDE 3.2.3 but hopefully might work with newer versions. I have tested it only on the machine that I've used to create it, and have not been developing it futher

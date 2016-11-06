@@ -1,0 +1,41 @@
+<!DOCTYPE UI><UI version="3.2" stdsetdef="1">
+<class>ScriptInfoDlg</class>
+<widget class="QWidget">
+    <property name="name">
+        <cstring>ScriptInfoDlg</cstring>
+    </property>
+    <property name="geometry">
+        <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>600</width>
+            <height>482</height>
+        </rect>
+    </property>
+    <property name="caption">
+        <string>Script Information</string>
+    </property>
+    <vbox>
+        <property name="name">
+            <cstring>unnamed</cstring>
+        </property>
+        <widget class="QLabel">
+            <property name="name">
+                <cstring>dlg_title</cstring>
+            </property>
+            <property name="text">
+                <string>Custom Linux information:</string>
+            </property>
+        </widget>
+        <widget class="KTextBrowser">
+            <property name="name">
+                <cstring>kTextBrowser1</cstring>
+            </property>
+        </widget>
+    </vbox>
+</widget>
+<layoutdefaults spacing="6" margin="11"/>
+<includehints>
+    <includehint>ktextbrowser.h</includehint>
+</includehints>
+</UI>

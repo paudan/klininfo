@@ -1,0 +1,1161 @@
+# translation of lt_LT.po to Lithuanian
+# This file is distributed under the same license as the KLinInfo package.
+# Copyright (C) 2004 Paulius Danenas.
+# Paulius Danenas <paulius.dan@takas.lt>, 2004.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: lt_LT\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2004-08-23 20:19+0200\n"
+"PO-Revision-Date: 2004-08-23 20:20+0200\n"
+"Last-Translator: Paulius Danenas <paulius.dan@takas.lt>\n"
+"Language-Team: Lithuanian <lt@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=ISO-8859-13\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.3.1\n"
+
+#: comdescrdlg.cpp:98
+msgid "Could not load information"
+msgstr "Informacija nebuvo ákrauta"
+
+#: comdescrdlg.cpp:116
+msgid "Command Description Dialog"
+msgstr "Komandø apraðymø dialogas"
+
+#: comdescrdlg.cpp:117
+msgid "Command list:"
+msgstr "Komandø sàraðas:"
+
+#: comdescrdlg.cpp:118 inputdlg.cpp:102
+msgid "Description:"
+msgstr "Apraðymas:"
+
+#: comdescrdlg.cpp:119 fileviewdlg.cpp:148
+msgid "Add"
+msgstr "Nauja"
+
+#: comdescrdlg.cpp:120 fileviewdlg.cpp:149
+msgid "Modify"
+msgstr "Pakeisti"
+
+#: comdescrdlg.cpp:121 fileviewdlg.cpp:150
+msgid "Remove"
+msgstr "Paðalinti"
+
+#: comdescrdlg.cpp:206 fileviewdlg.cpp:240
+msgid "File with descriptions does not exist or could not be loaded"
+msgstr "Failas su apraðymais neegzistuoja arba jo neámanoma pakrauti"
+
+#: comdescrdlg.cpp:233 fileviewdlg.cpp:273
+msgid "Unable to load file with filenames"
+msgstr "Neámanoma pakrauti failo su failø pavadinimais"
+
+#: comdescrdlg.cpp:334 comdescrdlg.cpp:337
+msgid "Command and program information"
+msgstr "Komandø ir programø informacija"
+
+#: comdescrdlg.cpp:341 fileviewdlg.cpp:381
+msgid "DESCRIPTION: \n"
+msgstr "APRAÐYMAS: \n"
+
+#: configdlg.cpp:133
+msgid "Configuration Dialog"
+msgstr "Konfigûravimo dialogas"
+
+#: configdlg.cpp:134 finputdlg.cpp:119 inputdlg.cpp:103 klininfodialog.cpp:248
+msgid "&Help"
+msgstr "&Pagalba"
+
+#: configdlg.cpp:135 finputdlg.cpp:120 inputdlg.cpp:104
+msgid "F1"
+msgstr "F1"
+
+#: configdlg.cpp:136
+msgid "Default"
+msgstr "Standartiðkai"
+
+#: configdlg.cpp:137 finputdlg.cpp:121 inputdlg.cpp:105
+msgid "&OK"
+msgstr "Gerai"
+
+#: configdlg.cpp:139 finputdlg.cpp:123 inputdlg.cpp:107
+msgid "&Cancel"
+msgstr "Atðaukti"
+
+#: configdlg.cpp:142 klininfodialog.cpp:119
+msgid "Fonts"
+msgstr "Ðriftai"
+
+#: configdlg.cpp:143
+msgid "Files"
+msgstr "Failai"
+
+#: configdlg.cpp:144
+msgid "Other"
+msgstr "Kiti"
+
+#: config_files.cpp:148 config_font.cpp:75
+msgid "Form1"
+msgstr "Form1"
+
+#: config_files.cpp:149
+msgid "You can select to use your own KLinInfo description files here"
+msgstr "Èia galima pasirinkti savo savo KLinInfo apraðymø failus "
+
+#: config_files.cpp:150
+msgid ""
+"This dialog gives ability to select files with descriptions, used by System "
+"files, Log files and Custom commands dialogs. You can also edit them here "
+msgstr "Ðis dialogas leidþia pasirinkti failus su apraðymais, naudojamais Sisteminiai failai, Log failai ir Komandø apraðymai dialogø. Èia taip pat galima juos redaguoti"
+
+#: config_files.cpp:151
+msgid "Source files "
+msgstr "Duomenø failai"
+
+#: config_files.cpp:152
+msgid "Command description file:"
+msgstr "Komandø apraðymø failas:"
+
+#: config_files.cpp:153
+msgid "The name and full path of command description file"
+msgstr "Komandø paraðymo failo pavadinimas ir pilnas kelias:"
+
+#: config_files.cpp:154 config_files.cpp:164 config_files.cpp:168
+#: config_files.cpp:174
+msgid "..."
+msgstr "..."
+
+#: config_files.cpp:155 config_files.cpp:156
+msgid "Select command description file here"
+msgstr "Èia pasirinkite komandø apraðymø failà"
+
+#: config_files.cpp:157
+msgid "Edit file.."
+msgstr "Redaguoti.."
+
+#: config_files.cpp:158
+msgid ""
+"Edit your selected file here (although it's not recommended to edit it by "
+"hand)"
+msgstr "Èia redaguokite savo pasirinktà failà (to nerekomenduojama daryti tiesiogiai)"
+
+#: config_files.cpp:159
+msgid "Allows you to edit command description file"
+msgstr "Suteikia galimybæ redaguoti komandø apraðymø failà"
+
+#: config_files.cpp:160
+msgid "<i>System files</i> description file:"
+msgstr "<i>Sisteminiai failai</i> apraðymø failas:"
+
+#: config_files.cpp:161
+msgid "The name and full path  of <i>System files</i> description file"
+msgstr "<i>Sisteminiai failai</i> apraðymø failo pavadinimas ir pilnas jo kelias:"
+
+#: config_files.cpp:162
+msgid "<i>Log files</i> description file:"
+msgstr "<i>Log failai</i> apraðymø failas:"
+
+#: config_files.cpp:163
+msgid "The name and full path of <i>Log files</i> description file"
+msgstr "<i>Log failai</i> apraðymø failo pavadinimas ir pilnas kelias iki jo:"
+
+#: config_files.cpp:165 config_files.cpp:170 config_files.cpp:173
+msgid "Edit file..."
+msgstr "Redaguoti..."
+
+#: config_files.cpp:166
+msgid "Program version file:"
+msgstr "Programø versijø failas:"
+
+#: config_files.cpp:167
+msgid "The name and full path of program version file"
+msgstr "Programø versijø failo pavadinimas ir pilnas kelias"
+
+#: config_files.cpp:169
+msgid "Select your own  version file"
+msgstr "Pasirinkite savo verssijø failà"
+
+#: config_files.cpp:171
+msgid ""
+"Allows you to edit your program version s file directly. This easy, you just "
+"need to write in the command that gives you the line containing the version "
+"of the program"
+msgstr "Leidþia tiesiogiai redaguoti programø versijø failà. Tai nëra sudëtinga, tereikia áraðyti komandà, spausdinanèia tekstà su programos versija  "
+
+#: config_files.cpp:172
+msgid "Edit your version file directly"
+msgstr "Tiesiogiai redaguoti versijø failà"
+
+#: config_files.cpp:175 config_files.cpp:176
+msgid "Select System file description file here"
+msgstr "Èia galima pasirinkti sisteminiø failø apraðymø failà"
+
+#: config_files.cpp:181 config_files.cpp:188 config_files.cpp:195
+#: config_files.cpp:202
+msgid "KLinInfo files(*.kl);;All files(*.*)"
+msgstr "KLinInfo failai(*.kl);;Visi failai(*.*)"
+
+#: config_files.cpp:213
+#, qt-format
+msgid "Error executing %1: file %2 could not be openened"
+msgstr "Klaida vykdant %1: failas %2 nebuvo atidarytas"
+
+#: config_font.cpp:76
+msgid "Change font in:"
+msgstr "Keisti ðriftà:"
+
+#: config_font.cpp:78
+msgid "Text dialogs"
+msgstr "Tekstiniai dialogai"
+
+#: config_font.cpp:79
+msgid "Description dialogs"
+msgstr "Apraðymø dialogai"
+
+#: config_font.cpp:80
+msgid "Tables"
+msgstr "Lentelës"
+
+#: config_font.cpp:81
+msgid "Listboxes"
+msgstr "Sàraðai"
+
+#: config_misc.cpp:83
+msgid "Miscellaneous preferences"
+msgstr "Ávairûs nustatymai"
+
+#: config_misc.cpp:84
+msgid "Miscellaneous options"
+msgstr "Ávairûs nustatymai"
+
+#: config_misc.cpp:85
+msgid "Show table grid"
+msgstr "Rodyti lentelës linijas"
+
+#: config_misc.cpp:86
+msgid ""
+"If this is checked then the grid in all the tables is on, else it is off. "
+"The grid is turned on by default"
+msgstr "Jei èia paþymëta, tai linijos lentelëse matomos, kitu atveju jos nematomos. Pagal nutylëjimà jos ájungtos"
+
+#: config_misc.cpp:87
+msgid "Editor for custom file editing:"
+msgstr "Redaktorius failø redagavimui:"
+
+#: config_misc.cpp:88
+msgid ""
+"Here you can define the editor for description files (<i>kwrite</i>, "
+"<i>kate</i>, <i>emacs</i>, etc.)"
+msgstr ""
+"Èia galite pasirinkti redaktoriø apraðymø failams (<i>kwrite</i>, "
+"<i>kate</i>, <i>emacs</i> ir kt.)"
+
+#: config_misc.cpp:89
+msgid "Text caption, used in font dialog display:"
+msgstr "Teksto eilutë, naudojama ðriftø dialoguose:"
+
+#: config_misc.cpp:90
+msgid "This text is displayed in font dialog as an example"
+msgstr "Ðis tekstas rodomas ðriftø dialoguose kaip pavyzdys"
+
+#: dudlg.cpp:50
+msgid "Drive"
+msgstr "Skirsnis"
+
+#: dudlg.cpp:51
+msgid "FS type"
+msgstr "FS tipas"
+
+#: dudlg.cpp:52
+msgid "Mounting point"
+msgstr "Montavimo taðkas"
+
+#: dudlg.cpp:53
+msgid "Blocks"
+msgstr "Blokai"
+
+#: dudlg.cpp:54
+msgid "Used"
+msgstr "Uþimta"
+
+#: dudlg.cpp:55
+msgid "Free"
+msgstr "Laisva"
+
+#: dudlg.cpp:56
+msgid "%"
+msgstr "%"
+
+#: dudlg.cpp:97
+msgid "Disk Usage Dialog"
+msgstr "Diskø naudojimo dialogas"
+
+#: dudlg.cpp:98
+msgid "Display in:"
+msgstr "Rodyti:"
+
+#: dudlg.cpp:100
+msgid "Kilobytes (kB), blocksize = 1 000"
+msgstr "Kilobitais (kB), bloko dydis = 1 000"
+
+#: dudlg.cpp:101
+msgid "Kilobytes (K), blocksize = 1 024"
+msgstr "Kilobaitais (K), bloko dydis = 1 024"
+
+#: dudlg.cpp:102
+msgid "Megabytes (mB), blocksize = 1 000 000"
+msgstr "Megabaitais (mB), bloko dydis = 1 000 000"
+
+#: dudlg.cpp:103
+msgid "Megabytes (M), blocksize = 1 048 576"
+msgstr "Megabaitais (M), bloko dydis =1 048 576"
+
+#: dudlg.cpp:104
+msgid "Gigabytes (gB), blocksize = 1 000 000 000"
+msgstr "Gigabaitais (gB), bloko dydis = 1 000 000 000"
+
+#: dudlg.cpp:105
+msgid "Gigabytes (G), blocksize = 1 073 741 824"
+msgstr "Gigabaitais (G), bloko dydis = 1 073 741 824"
+
+#: dudlg.cpp:106
+msgid "Terabytes (tB), blocksize = 1 000 000 000 000"
+msgstr "Terabaitais (tB), bloko dydis = 1 000 000 000 000"
+
+#: dudlg.cpp:107
+msgid "Terabytes (T), blocksize = 1 099 511 627 776"
+msgstr "Terabaitais (T), bloko dydis = 1 099 511 627 776"
+
+#: dudlg.cpp:108
+msgid "Easy readable"
+msgstr "Lengvai skaitomas"
+
+#: dudlg.cpp:131 dudlg.cpp:142
+msgid "Fatal error. Disk usage information could not be retrieved"
+msgstr "Klaida: diskø naudojimo informacija nebuvo nuskaityta"
+
+#: dudlg.cpp:309 dudlg.cpp:312 selsavedlg.cpp:131
+msgid "Disk usage information"
+msgstr "Diskø naudojimo informacija"
+
+#: fileviewdlg.cpp:125
+msgid "Command and program descriptions laded successfully"
+msgstr "Komandø ir programø apraðymai uþkrauti sëkmingai"
+
+#: fileviewdlg.cpp:126
+msgid "Unable to load file list"
+msgstr "Neámanoma nuskaityti failø sàraðo "
+
+#: fileviewdlg.cpp:143
+msgid "File Preview Dialog"
+msgstr "Failø perþiûros dialogas"
+
+#: fileviewdlg.cpp:144
+msgid "The most important system files"
+msgstr "Svarbiausi sistemos failai"
+
+#: fileviewdlg.cpp:145
+msgid "File contents:"
+msgstr "Failo turinys:"
+
+#: fileviewdlg.cpp:146 finputdlg.cpp:118
+msgid "File description:"
+msgstr "Failo apraðymas:"
+
+#: fileviewdlg.cpp:147
+msgid "Select file for viewing:"
+msgstr "Pasirinkite failà perþiûrai:"
+
+#: fileviewdlg.cpp:159
+#, qt-format
+msgid "File %1 doesn't exist"
+msgstr "Failas %1 neegzistuoja"
+
+#: fileviewdlg.cpp:162
+#, qt-format
+msgid "File %1 could not be opened for reading"
+msgstr "Failas %1 negali bûti atidarytas skaitymui"
+
+#: fileviewdlg.cpp:374 fileviewdlg.cpp:377
+msgid "File information"
+msgstr "Failo informacija"
+
+#: finputdlg.cpp:115
+msgid "Change file information"
+msgstr "Keisti failo informacijà"
+
+#: finputdlg.cpp:116
+msgid "File name:"
+msgstr "Failo pavadinimas:"
+
+#: finputdlg.cpp:129
+msgid "All files (*.*)"
+msgstr "Visi failai (*.*)"
+
+#: finputdlg.cpp:131
+msgid "File name field is empty"
+msgstr "Failo pavadinimo laukas tuðèias"
+
+#: finputdlg.cpp:131 finputdlg.cpp:138
+msgid "Error setting filename"
+msgstr "Klaida failo pavadinime arba já nustatant"
+
+#: finputdlg.cpp:138
+#, qt-format
+msgid "Error setting filename: file %1 does not exist"
+msgstr "klaida failo pavadinime: failas %1 neegzistuoja"
+
+#: fontdlg.cpp:108
+msgid "Font Preview"
+msgstr "Ðriftø perþiûra"
+
+#: fontdlg.cpp:109
+msgid "Font size:"
+msgstr "Ðrifto dydis:"
+
+#: fontdlg.cpp:110
+msgid "Font style:"
+msgstr "Ðrifto stilius:"
+
+#: fontdlg.cpp:112
+msgid "Fonts, found in your Linux system:"
+msgstr "Ðriftai, rasti ðioje Linux sistemoje:"
+
+#: fontdlg.cpp:189 fontdlg.cpp:192
+msgid "TTF Font list"
+msgstr "TTF ðriftø sàraðas"
+
+#: inputdlg.cpp:100
+msgid "Information Input"
+msgstr "Informacijos ávedimas"
+
+#: inputdlg.cpp:101
+msgid "Command name:"
+msgstr "Komandos pavadinimas:"
+
+#: klininfodialog.cpp:105
+msgid "KLinInfo v0.2"
+msgstr "KLinInfo v0.2"
+
+#: klininfodialog.cpp:109
+msgid "Command descriptions"
+msgstr "Komandø apraðymai"
+
+#: klininfodialog.cpp:115
+msgid "Font families"
+msgstr "Ðriftø ðeimynos"
+
+#: klininfodialog.cpp:118
+msgid "KDE fonts"
+msgstr "KDE ðriftai"
+
+#: klininfodialog.cpp:125
+msgid "log files"
+msgstr "Log failai"
+
+#: klininfodialog.cpp:128
+msgid "System files"
+msgstr "Sisteminiai failai"
+
+#: klininfodialog.cpp:129
+msgid "Important files"
+msgstr "Svarbûs failai"
+
+#: klininfodialog.cpp:135
+msgid "Disk information"
+msgstr "Diskø informacija"
+
+#: klininfodialog.cpp:138 klininfodialog.cpp:596 klininfodialog.cpp:635
+#: selsavedlg.cpp:132
+msgid "Memory information"
+msgstr "Atminties informacija"
+
+#: klininfodialog.cpp:141
+msgid "Other information"
+msgstr "Kita informacija"
+
+#: klininfodialog.cpp:144 printenvdlg.cpp:82 printenvdlg.cpp:85
+#: selsavedlg.cpp:134
+msgid "printenv information"
+msgstr "printenv informacija"
+
+#: klininfodialog.cpp:145
+msgid "Information"
+msgstr "Informacija"
+
+#: klininfodialog.cpp:149 klininfodialog.cpp:599 klininfodialog.cpp:647
+#: selsavedlg.cpp:135
+msgid "Process information"
+msgstr "Procesø informacija"
+
+#: klininfodialog.cpp:152 klininfodialog.cpp:600 klininfodialog.cpp:651
+#: selsavedlg.cpp:138
+msgid "Partition information"
+msgstr "Skirsniø informacija"
+
+#: klininfodialog.cpp:155 klininfodialog.cpp:602 klininfodialog.cpp:655
+#: selsavedlg.cpp:141
+msgid "Module information"
+msgstr "Moduliø informacija"
+
+#: klininfodialog.cpp:160
+msgid "RPM"
+msgstr "RPM"
+
+#: klininfodialog.cpp:163
+msgid "Package list"
+msgstr "Paketø sàraðas"
+
+#: klininfodialog.cpp:166
+msgid "Custom programs"
+msgstr "Programos"
+
+#: klininfodialog.cpp:167
+msgid "Packages"
+msgstr "Paketai"
+
+#: klininfodialog.cpp:213
+msgid "To separate files"
+msgstr "Á atskirus failus"
+
+#: klininfodialog.cpp:214
+msgid "To a single file"
+msgstr "Á vienà failà"
+
+#: klininfodialog.cpp:218
+msgid "&Save"
+msgstr "Ið&saugoti"
+
+#: klininfodialog.cpp:220
+msgid "E&xit"
+msgstr "Baigti darbà"
+
+#: klininfodialog.cpp:224
+msgid "Command descriptions file"
+msgstr "Komandø apraðymø failas"
+
+#: klininfodialog.cpp:225
+msgid "System files descriptions file"
+msgstr "Sisteminiø failø apraðymø failas"
+
+#: klininfodialog.cpp:226
+msgid "Log file descriptions file"
+msgstr "Log failø apraðymø failas"
+
+#: klininfodialog.cpp:227
+msgid "Version file"
+msgstr "Versijø failas"
+
+#: klininfodialog.cpp:228
+msgid "Information script"
+msgstr "Informacinis skriptas"
+
+#: klininfodialog.cpp:232
+msgid "Edit files"
+msgstr "Redaguoti failus"
+
+#: klininfodialog.cpp:233
+msgid "Program &preferences"
+msgstr "Programø nustatymai"
+
+#: klininfodialog.cpp:237
+msgid "Help"
+msgstr "Pagalba"
+
+#: klininfodialog.cpp:238
+msgid "What's this?"
+msgstr "Kas tai?"
+
+#: klininfodialog.cpp:239
+msgid "&About"
+msgstr "&Apie"
+
+#: klininfodialog.cpp:240
+msgid "About KDE"
+msgstr "Apie KDE"
+
+#: klininfodialog.cpp:244
+msgid "&File"
+msgstr "&Failas"
+
+#: klininfodialog.cpp:245
+msgid "Settings"
+msgstr "Nustatymai"
+
+#: klininfodialog.cpp:261
+msgid "Detailed information about your Linux system"
+msgstr "Detali informacija apie Linux sistemà"
+
+#: klininfodialog.cpp:353
+msgid "Ok"
+msgstr "Gerai"
+
+#: klininfodialog.cpp:354
+msgid "Close"
+msgstr "Uþdaryti"
+
+#: klininfodialog.cpp:358
+msgid "Author"
+msgstr "Autorius"
+
+#: klininfodialog.cpp:360
+msgid "About"
+msgstr "Apie"
+
+#: klininfodialog.cpp:360
+msgid "The Linux information utility"
+msgstr "Linux informacijos programa"
+
+#: klininfodialog.cpp:401 klininfodialog.cpp:479
+msgid "Important system log files"
+msgstr "Svarbûs sistemos log failai"
+
+#: klininfodialog.cpp:582
+msgid "HTML files (*.html, *.htm);;All files (*.*)"
+msgstr "HTML failai (*.html, *.htm);;Visi failai (*.*)"
+
+#: klininfodialog.cpp:597 klininfodialog.cpp:639
+msgid "Information about Linux"
+msgstr "Informacija apie Linux"
+
+#: klininfodialog.cpp:601 klininfodialog.cpp:675 selsavedlg.cpp:144
+msgid "Hard disk information"
+msgstr "Kietojo disko informacija"
+
+#: klininfodialog.cpp:603 klininfodialog.cpp:659 pkginfodlg.cpp:115
+#: selsavedlg.cpp:140
+msgid "Package information"
+msgstr "Paketø informacija"
+
+#: klininfodialog.cpp:604 klininfodialog.cpp:663 selsavedlg.cpp:142
+msgid "RPM package information"
+msgstr "RPM paketø informacija"
+
+#: klininfodialog.cpp:605 klininfodialog.cpp:667
+msgid "Version information"
+msgstr "Versijø informacija"
+
+#: main.cpp:78
+msgid "Loading GUI..."
+msgstr "Kraunamas GUI..."
+
+#: main.cpp:81
+msgid "Loading widgets..."
+msgstr "Kraunami programos komponentai..."
+
+#: main.cpp:84
+msgid "Getting user settings..."
+msgstr "Pritaikomi vartotojo nustatymai..."
+
+#: main.cpp:88
+msgid "Finished loading, starting application..."
+msgstr "Krovimasis baigtas, startuojama programa..."
+
+#: memorydlg.cpp:143
+msgid "Memory Display Dialog"
+msgstr "Atminties rodymo dialogas"
+
+#: memorydlg.cpp:144
+msgid "All memory"
+msgstr "Visa atmintis"
+
+#: memorydlg.cpp:145
+msgid "Swap memory"
+msgstr "Swap atmintis"
+
+#: memorydlg.cpp:146
+msgid "Physical memory"
+msgstr "Fizinë atmintis"
+
+#: memorydlg.cpp:147
+msgid "Total physical memory"
+msgstr "Viso fizinës atminties"
+
+#: memorydlg.cpp:148
+msgid "Used physical memory"
+msgstr "Naudojama fizinë atmintis"
+
+#: memorydlg.cpp:149
+msgid "Free physical memory"
+msgstr "Laisva fizinë atmintis"
+
+#: memorydlg.cpp:150
+msgid "Buffers(-)"
+msgstr "Buferiai(-)"
+
+#: memorydlg.cpp:151
+msgid "Cache:"
+msgstr "Keðas:"
+
+#: memorydlg.cpp:152
+msgid "\tShared memory"
+msgstr "\tBendrai naudojama (shared) atmintis"
+
+#: memorydlg.cpp:153
+msgid "\tDisk buffers"
+msgstr "\tDisko buferiai"
+
+#: memorydlg.cpp:154
+msgid "\tCached memory"
+msgstr "\tKeðuota atmintis"
+
+#: memorydlg.cpp:155
+msgid "Total swap memory"
+msgstr "Viso swap atminties"
+
+#: memorydlg.cpp:156
+msgid "Used swap memory "
+msgstr "Naudojama swap atmintis"
+
+#: memorydlg.cpp:157
+msgid "Free swap memory"
+msgstr "Laisva swap atmintis"
+
+#: memorydlg.cpp:158
+msgid "Total memory"
+msgstr "Viso atminties"
+
+#: memorydlg.cpp:159
+msgid "Total memory used"
+msgstr "Viso naudojamos atminties"
+
+#: memorydlg.cpp:160
+msgid "Total memory free"
+msgstr "Viso laisvos atminties"
+
+#: memorydlg.cpp:170
+msgid "Fatal error. Memory usage information could not be retrieved"
+msgstr "Klaida: atminties panaudojimo informacija nebuvo nuskaityta"
+
+#: memorydlg.cpp:227
+#, c-format, qt-format
+msgid "Used physical memory: %1%"
+msgstr "Naudojama fizinës atminties: %1%"
+
+#: memorydlg.cpp:232 memorydlg.cpp:273
+#, c-format, qt-format
+msgid "Used swap memory: %1%"
+msgstr "Naudojama swap atminties: %1%"
+
+#: memorydlg.cpp:233
+#, c-format, qt-format
+msgid "Free memory: %1%"
+msgstr "Laisva atmintis: %1%"
+
+#: memorydlg.cpp:245
+#, c-format, qt-format
+msgid "Program data: %1%"
+msgstr "Programø duomenys: %1%"
+
+#: memorydlg.cpp:250
+#, c-format, qt-format
+msgid "Disk buffer: %1%"
+msgstr "Diskø buferiai: %1%"
+
+#: memorydlg.cpp:255 memorydlg.cpp:260
+#, c-format, qt-format
+msgid "Shared memory: %1%"
+msgstr "Bendrai naudojama atmintis: %1%"
+
+#: memorydlg.cpp:261
+#, c-format, qt-format
+msgid "Free physical memory: %1%"
+msgstr "Laisva fizinë atmintis: %1%"
+
+#: memorydlg.cpp:274
+#, c-format, qt-format
+msgid "Free swap memory: %1%"
+msgstr "Laisva swap atmintis: %1%"
+
+#: modldispdlg.cpp:50
+msgid "Module"
+msgstr "Modulis"
+
+#: modldispdlg.cpp:51
+msgid "Size"
+msgstr "Dydis"
+
+#: modldispdlg.cpp:52
+msgid "Used by"
+msgstr "Naudojamas"
+
+#: modldispdlg.cpp:53
+msgid "Not tainted"
+msgstr "Not tainted"
+
+#: modldispdlg.cpp:76
+msgid "Module Display Dialog"
+msgstr "Moduliai"
+
+#: modldispdlg.cpp:77
+msgid "Modules, loaded currently in Linux kernel:"
+msgstr "Moduliai, ðiuo metu pkrauti Linux branduolyje:"
+
+#: modldispdlg.cpp:87
+msgid "Fatal error running lsmod. Module information could not be retrieved"
+msgstr "Klaida paleidþiant lsmod: moduliø informacija nebuvo nuskaityta"
+
+#: partitiondlg.cpp:91
+msgid "Partition Display Dialog"
+msgstr "Skirsniai"
+
+#: partitiondlg.cpp:92
+msgid "Select partition table display style:"
+msgstr "Pasirinkite skirsniø lentelës atvaizdavimo bûdà:"
+
+#: partitiondlg.cpp:93
+msgid "Hard drive information:"
+msgstr "Kietojo disko informacija:"
+
+#: partitiondlg.cpp:94
+msgid "Displays HD information "
+msgstr "Rodoma HDinformacija: "
+
+#: partitiondlg.cpp:96
+msgid "With sizes in cylinders (fdisk)"
+msgstr "Dydþiai cilindrais (fdisk)"
+
+#: partitiondlg.cpp:97
+msgid "With sizes in sectors (fdisk)"
+msgstr "Dydþiai sektoriais (fdisk)"
+
+#: partitiondlg.cpp:98
+msgid "In sector order format (cfdisk)"
+msgstr "Sektoriø eilës formatas (cfdisk)"
+
+#: partitiondlg.cpp:99
+msgid "In raw format (cfdisk)"
+msgstr "Raw formatas (cfdisk)"
+
+#: partitiondlg.cpp:100
+msgid "Raw format (what's exactly on the disk)"
+msgstr "Raw formatas (tai, kaip lentelë tiksliai yra diske)"
+
+#: partitiondlg.cpp:101
+msgid "Select the way you want to see the partitions displayed."
+msgstr "Pasirinkite, kaip atvaizduotà norite matyti skirsniø lentelæ"
+
+#: partitiondlg.cpp:102
+msgid "This allows you to select the way for your partition display"
+msgstr "Tai leidþia jums pasirinkti bûdà, kurio atvaizduojama skirsniø lentelë"
+
+#: partitiondlg.cpp:104
+msgid "This is where hard disk information is being displayed"
+msgstr "Èia atvaizduojama kietøjø diskø informacija"
+
+#: partitiondlg.cpp:106
+msgid "Displays your system's partition information in the way you want"
+msgstr "Atvaizduojama jûsø sistemos skirsniø informacija taip, kaip jûs to norite"
+
+#: partitiondlg.cpp:128 partitiondlg.cpp:141
+msgid "Fatal error. Could not retrieve information"
+msgstr "Klaida: nebuvo nuskaityta informacija"
+
+#: pkginfodlg.cpp:63
+msgid "Package name"
+msgstr "Paketo pavadinimas"
+
+#: pkginfodlg.cpp:64
+msgid "Compressed package size"
+msgstr "Suspausto paketo dydis"
+
+#: pkginfodlg.cpp:65
+msgid "Uncompressed package size"
+msgstr "Iðskleisto paketo dydis"
+
+#: pkginfodlg.cpp:66
+msgid "Full package name"
+msgstr "Pilnas paketo pavadinimas"
+
+#: pkginfodlg.cpp:94
+msgid "Package information successfully loaded."
+msgstr "Paketø informacija sëkmingai uþkrauta"
+
+#: pkginfodlg.cpp:113
+msgid "Package Information Dialog"
+msgstr "Paketø informacijos dialogas"
+
+#: pkginfodlg.cpp:114
+msgid "Packages, installed in this Linux system:"
+msgstr "Paketai, instaliuoti ðioje Linux sistemoje:"
+
+#: pkginfodlg.cpp:116
+msgid "Package files"
+msgstr "Paketø failai"
+
+#: pkginfodlg.cpp:123 pkginfodlg.cpp:159
+msgid "Could not retrieve package information"
+msgstr "Paketø informacija nebuvo sëkmingai nuskaityta"
+
+#: printenvdlg.cpp:64
+msgid "printenv Dialog"
+msgstr "printenv dialogas"
+
+#: printenvdlg.cpp:69
+msgid "<p><b>The output of <i>printenv</i> command</b></p>"
+msgstr "<p><b> <i>printenv</i> komandos iðvestis</b></p>"
+
+#: processlistdlg.cpp:129
+msgid "Process Display Dialog"
+msgstr "Procesø dialogas"
+
+#: processlistdlg.cpp:130
+msgid "Output format:"
+msgstr "Iðvesties formatas:"
+
+#: processlistdlg.cpp:131
+msgid "User-oriented"
+msgstr "Orientuotas á vartotojà"
+
+#: processlistdlg.cpp:132
+msgid "Also displays information of memory and CPU usage percentage"
+msgstr "Taip pat atvaizduoja atminties informacijà ir CPU naudojimo procentà"
+
+#: processlistdlg.cpp:133
+msgid "As registers"
+msgstr "Registrai"
+
+#: processlistdlg.cpp:134
+msgid "Displays registers, used by processes"
+msgstr "Atvaizduojami naudojami registrai"
+
+#: processlistdlg.cpp:135
+msgid "Normal"
+msgstr "Normalus"
+
+#: processlistdlg.cpp:136
+msgid "Signal"
+msgstr "Signalai"
+
+#: processlistdlg.cpp:137
+msgid "Displays output as signals"
+msgstr "Iðvestis atvaizduojama kaip signalai"
+
+#: processlistdlg.cpp:138
+msgid "Show only processes, run by current user"
+msgstr "Rodyti tik dabartinio vartotojo vykdomus procesus"
+
+#: processlistdlg.cpp:139
+msgid "Show only running processes"
+msgstr "Rodyti tik vykstanèius procesus"
+
+#: processlistdlg.cpp:141
+msgid "Process, currently run on this machine:"
+msgstr "Ðiuo metu kompiuteryje vykstantys procesai:"
+
+#: processlistdlg.cpp:142
+msgid "Refresh list"
+msgstr "Atnaujinti sàraðà"
+
+#: processlistdlg.cpp:143
+msgid "Refresh process information"
+msgstr "Atnaujinti procesø informacijà"
+
+#: processlistdlg.cpp:217
+msgid "Flag"
+msgstr "Å½ymë"
+
+#: processlistdlg.cpp:218
+msgid "State"
+msgstr "Bûsena"
+
+#: processlistdlg.cpp:219 processlistdlg.cpp:286 processlistdlg.cpp:319
+#: processlistdlg.cpp:350
+msgid "User ID"
+msgstr "Vartotojo ID"
+
+#: processlistdlg.cpp:220 processlistdlg.cpp:287 processlistdlg.cpp:320
+#: processlistdlg.cpp:351
+msgid "Process ID"
+msgstr "Proceso ID"
+
+#: processlistdlg.cpp:221
+msgid "PPID"
+msgstr "PPID"
+
+#: processlistdlg.cpp:222
+msgid "Priority"
+msgstr "Prioritetas"
+
+#: processlistdlg.cpp:223
+msgid "Used memory"
+msgstr "Naudojama atmintis"
+
+#: processlistdlg.cpp:224
+msgid "WCHAN"
+msgstr "WCHAN"
+
+#: processlistdlg.cpp:225 processlistdlg.cpp:294 processlistdlg.cpp:325
+msgid "Start time"
+msgstr "Pradþios laikas"
+
+#: processlistdlg.cpp:226 processlistdlg.cpp:292 processlistdlg.cpp:326
+#: processlistdlg.cpp:358
+msgid "TTY"
+msgstr "TTY"
+
+#: processlistdlg.cpp:227 processlistdlg.cpp:295 processlistdlg.cpp:327
+#: processlistdlg.cpp:359
+msgid "Time run"
+msgstr "Veiklos laikas"
+
+#: processlistdlg.cpp:228 processlistdlg.cpp:296 processlistdlg.cpp:328
+#: processlistdlg.cpp:360
+msgid "Command (process)"
+msgstr "Komanda (procesas) "
+
+#: processlistdlg.cpp:288
+msgid "CPU usage, %"
+msgstr "CPU naudojimas, %"
+
+#: processlistdlg.cpp:289
+msgid "Memory usage, %"
+msgstr "Atminties naudojimas, %"
+
+#: processlistdlg.cpp:290
+msgid "VSZ"
+msgstr "VSZ"
+
+#: processlistdlg.cpp:291
+msgid "RSS"
+msgstr "RSS"
+
+#: processlistdlg.cpp:293 processlistdlg.cpp:357
+msgid "STAT"
+msgstr "STAT"
+
+#: processlistdlg.cpp:318
+msgid "User"
+msgstr "Vartotojas"
+
+#: processlistdlg.cpp:321
+msgid "Pending"
+msgstr "Laukiama"
+
+#: processlistdlg.cpp:322
+msgid "Blocked"
+msgstr "Uþblokuota"
+
+#: processlistdlg.cpp:323
+msgid "Ignored"
+msgstr "Ignoruota"
+
+#: processlistdlg.cpp:324
+msgid "Caught"
+msgstr "Pagauti"
+
+#: processlistdlg.cpp:352
+msgid "STACKP"
+msgstr "STACKP"
+
+#: processlistdlg.cpp:353
+msgid "ESP"
+msgstr "ESP"
+
+#: processlistdlg.cpp:354
+msgid "EIP"
+msgstr "EIP"
+
+#: processlistdlg.cpp:355
+msgid "Timeout"
+msgstr "Pertrauka"
+
+#: processlistdlg.cpp:356
+msgid "Alarm"
+msgstr "Aliarmas"
+
+#: rpmsearchdlg.cpp:95
+msgid "RPM Search Dialog"
+msgstr "RPM paieðkos dialogas"
+
+#: rpmsearchdlg.cpp:96
+msgid "Find RPM"
+msgstr "Rasti RPM"
+
+#: rpmsearchdlg.cpp:98
+msgid "List All RPM packages"
+msgstr "Visø RPM paketø sàraðas"
+
+#: rpmsearchdlg.cpp:100
+msgid "Line to search:"
+msgstr "Paieðkos eilutë:"
+
+#: rpmsearchdlg.cpp:111 rpmsearchdlg.cpp:122
+msgid "Error: could not retrieve RPM package information"
+msgstr "Klaida: nebuvo nuskaityta RPM informacija"
+
+#: scriptinfodlg.cpp:58
+#, qt-format
+msgid "Fatal error. Script %1 could not be executed"
+msgstr "Klaida: skriptas %1 negali bûti ávykdytas"
+
+#: scriptinfodlg.cpp:75
+msgid "Script Information"
+msgstr "Skripto informacija"
+
+#: scriptinfodlg.cpp:76
+msgid "Custom Linux information:"
+msgstr "Kita Linux informacija:"
+
+#: selsavedlg.cpp:127
+msgid "Select what to save"
+msgstr "Pasirinkite, kà iðsaugoti"
+
+#: selsavedlg.cpp:128
+msgid "Select what to save:"
+msgstr "Pasirinkite, kà iðsaugoti:"
+
+#: selsavedlg.cpp:129
+msgid "Command list and their descriptions"
+msgstr "Komandø sàraðas ir jø apraðymai"
+
+#: selsavedlg.cpp:130
+msgid "System file list and their descriptions"
+msgstr "Sistemos failø sàraðas su apraðymais"
+
+#: selsavedlg.cpp:133
+msgid "Custom information"
+msgstr "Kita informacija"
+
+#: selsavedlg.cpp:136
+msgid "Font information"
+msgstr "Ðriftø informacija"
+
+#: selsavedlg.cpp:137
+msgid "Select"
+msgstr "Pasirinkti"
+
+#: selsavedlg.cpp:139
+msgid "Log file list and their descriptions"
+msgstr "Log failø sàraðas su apraðymais"
+
+#: selsavedlg.cpp:143
+msgid "Program version information"
+msgstr "Programø versijø informacija"
+
+#: simpltabledlg.cpp:50
+msgid "Program (command) name"
+msgstr "Programos (komandos) pavadinimas"
+
+#: simpltabledlg.cpp:51
+msgid "Version"
+msgstr "Versija"
+
+#: simpltabledlg.cpp:79
+msgid "Simple Table Dialog"
+msgstr "Paprastas lentelës dialogas"
+
+#: simpltabledlg.cpp:80
+msgid "Programs, installed in this Linux system, and their versions:"
+msgstr "Programos, instaliuotos Linux sistemoje, ir jø versijos:"
+
+#: simpltabledlg.cpp:91
+msgid "File with filenames does not exist or could not be loaded"
+msgstr "Failas su failø pavadinimais neegzistuoja arba negali bûti pakrautas "
+
+#: simpltabledlg.cpp:107
+msgid "Error loading version file"
+msgstr "Klaida uþkraunant versijø failà"
+
