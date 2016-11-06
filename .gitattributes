@@ -1,0 +1,2 @@
+-*.m4 linguist-language=C++ 
+-Makefile.* linguist-language=C++ 
